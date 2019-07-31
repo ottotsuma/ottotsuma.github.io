@@ -640,8 +640,11 @@ img {
   height: 300px;
   perspective: 1000px;
   position: inline;
-  margin-left: 290px;
+  margin-left: 30%;
   float: none;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 5px;
 }
 
 .flip-card-inner {
@@ -703,3 +706,20 @@ img {
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);; 
 }
 
+@media only screen and (max-width: 768px){
+	/*flip*/
+
+.flip-card {
+	display: none;
+}
+		@media screen and (max-width: 900px) {
+
+			#nav {
+				display: none;
+			}
+
+				#nav + #main {
+					padding-top: 0;
+				}
+
+		}
