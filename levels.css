@@ -577,10 +577,9 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  float: none;
-	position: inline;
+  float: left;
   background-color: white;
-  width: 90%%;
+  width: 50%;
   height: 100%;
   margin: 1%;
 }
@@ -640,7 +639,7 @@ img {
   height: 300px;
   perspective: 1000px;
   position: inline;
-  margin-left: 290px;
+  margin-left: 40%;
   float: none;
 }
 
@@ -666,12 +665,12 @@ img {
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: blue;
+  color: white;
 }
 
 .flip-card-back {
-  background-color: grey;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
