@@ -35,78 +35,10 @@ Level 51 - 100
 
 Class advancement
 As with other classes your advance class choices will depend on your starting class (Rogue), Spirit absorbed (At time of advance). If you pick a unique/quest class you cannot also pick an advanced class. (eg. You cannot be Saint and Vishkanya at the same time.)
-
-110 - 7
-180 - 8
-200 - 9
-240 - 10
-300 - 11 (some skills, super teir)
-500 - 
-999 - 
-MAX - 
-
-hp
-100 + (level * 10) + (vit *14.5) {basic, change on class?}
-2100 + 1320 = 3420
-
-Mp
-(level * 5) + (mag * 8)
-1000 + 3920 = 4920
-
-
-Bubble - 90% of used MP.
-90% of 4000 is 3600
-90% of 8000 is 7200
-
-With 200 vit at 200, you get 5000hp 
-With blue Items you can get over 10,000hp at level 200.
-Class skills for tanks and stuff would really go past it.
-
-Physical bubble - reduces physcial damage taken (X% dammage reduced, Y% mana taken)
-https://finalfantasy.fandom.com/wiki/Magic_Barrier_(ability) Nope Just use stone skin.
-
-level ?, 100 damage, 5 reduced, 95 done. 5% reduction. 
-mana reduced 3. 50% of the damage taken as mana
-500 damage, 25 reduced, 425 done. 5% reduction. 
-mana reduced 13. 50% of the damage taken as mana
-
-1, 10, prime. 
-1 = 9%
-10 = 90% 
-Prime = 19% 
-
-Wep speeds are speeds given {this looks good}
-Dammage = Power * (Str/Def) * Rand 
-rand =(RANDBETWEEN(240,271)/100)
-Magic formula the same
-
-Kyber Sword, normal
-(490 mag + (2*level) + 1) * RAND - (def*Rand) = 1582
-say mdef is 100. rand is 2.
-Duel Stats, mdef and rand same. 
-Dammage 2062 
-Estmate that people with 100 mdef & 3000 hp at level 200 would not be too rare.
-
-Magic power = Cast speed ish 
-cast speed 0 ~ 5
-Wep Power 0 ~ 100
-Skill 0 ~ 500 ~ half level
-Wep speed 0 ~ 5
-
-Attack speed base (ASB) = 3, newspeed (NS) = ASB * e^-(3/dex)???
-move speed = base move speed + bonuses + (dex / x)
-
-Speed
-roundup(dex,-1)/10
-=(F4*(ROUNDUP(E3,-1)/10))
-F4 = damage
-E3 = dex
-
-Remeber spells take time to cast mostly, skills are mostly instant and we are focusing on a normal attack it might take 2 secs to swing an axe or chant a spell 
 -->
 <html>
 <head>
-<title>MyCard</title>
+<title>Otto100</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/levels.css" />
@@ -121,7 +53,7 @@ Remeber spells take time to cast mostly, skills are mostly instant and we are fo
 <!-- Header -->
 <header id="header" class="alt">
 <span class="logo"><img src="images/race2.png" alt="sword" height="15%" width="15%" /></span>
-<h1>Otto Charter</h1>
+<h1>Otto 100</h1>
 <p>My personal in game charter</p>
 </header>
 
@@ -205,17 +137,17 @@ two - 60
 <div id="CardContainer">
 <div id="inner">
 
-<h4>The following is at level 200.</h4>
+<h4>The following is at level 100.</h4>
 
 <div class="card">
 <div class="container"><h4 style="color:black;">Stats distribution + race</h4> 
 <p>
 Strength - +1<br>
 Vitality - +51<br>
-Defence - +100 <br>
-Magic - +201<br>
+Defence - +50 <br>
+Magic - +101<br>
 MDef - +100<br>
-Dexterity - +51<br>
+Dexterity - +101<br>
 Sense - +1<br>
 Charisma - +0
 </p> </div></div>
@@ -225,10 +157,10 @@ Charisma - +0
 <p>
 Strength - +1<br>
 Vitality - +91<br>
-Defence - +100 <br>
-Magic - +421<br>
+Defence - +50 <br>
+Magic - +321<br>
 MDef - +260<br>
-Dexterity - +51<br>
+Dexterity - +101<br>
 Sense - +1<br>
 Charisma - +0
 </p> </div></div>
@@ -238,10 +170,10 @@ Charisma - +0
 <p>
 Strength - +1<br>
 Vitality - +91<br>
-Defence - +100 <br>
-Magic - +471<br>
+Defence - +50 <br>
+Magic - +371<br>
 MDef - +260<br>
-Dexterity - +51<br>
+Dexterity - +101<br>
 Sense - +1<br>
 Charisma - +10
 </p> </div></div>
@@ -251,10 +183,10 @@ Charisma - +10
 <p>
 Strength - +11<br>
 Vitality - +91<br>
-Defence - +100 <br>
-Magic - +490<br>
+Defence - +50 <br>
+Magic - +390<br>
 MDef - +260<br>
-Dexterity - +79<br>
+Dexterity - +110<br>
 Sense - +20<br>
 Charisma - +10
 </p> </div></div>
@@ -271,9 +203,9 @@ Guild Or Kingdom bonuses don`t have a huge affect on base stats.
 Titles have a direct affect on base stats, usually this is all titles do it is rare to find a title that dosen`t increase your stats. Such as Knight Slayer, +10 vitality +3 strength. (Everything displayed on this page is not including title affects.)
 </p>
 
-<h4>Other stats</h4>
-<p>HP is 1710 with all items on, this includes my -50% hp</p>
-<p>MP is 7380 with all items on, this includes my +50% mp</p>
+<h4>Other stats in a duel</h4>
+<p>HP is 1983 with all items on, this includes my -50% hp</p>
+<p>MP is 7723 with all items on, this includes my +50% mp</p>
 <p>Resist normal weapons total is 15% from vamp, 9% from skills, 24% total</p>
 <p>Resist magic is 19% from skills</p>
 <p>Dueling I have a 49% increase in stats</p>
@@ -304,9 +236,11 @@ Titles have a direct affect on base stats, usually this is all titles do it is r
 <p>
 <ul>
 <li>0 - Basic mana spells unlocked</li>
-<li>10 - Picked first element</li>
-<li>30 - Basic spells unlocked(cap raised from 0 to 3)</li>
-<li>50 - Picked 2nd element</li>
+<li>10 - Picked first element, Cap Raised to 1</li>
+<li>20 - Cap Raised to 2</li>
+<li>30 - Cap Raised to 3</li>
+<li>40 - Cap Raised to 4</li>
+<li>50 - Picked 2nd element, Cap Raised to 5</li>
 </ul>
 </p>
 
@@ -320,17 +254,18 @@ Titles have a direct affect on base stats, usually this is all titles do it is r
 
 <p>
 <ul>
-<li>70 - Unlock personal summon</li>
-<li>80 - Intermidate spells unlocked (cap raised to 6)</li>
-<li>100 - Class Advancement</li>
-<li>The cap is raised again later, but i`ll let you find out when.</li>
+<li>60 - Cap Raised to 6</li>
+<li>70 - Unlock familia, Cap Raised to 7</li>
+<li>80 - Cap Raised to 8</li>
+<li>90 - Cap Raised to 9</li>
+<li>100 - Class Advancement, Cap Raised to 10</li>
 </ul>
 </p>
 
 </div></div>
 <footer>
 
-<h2>Skills at level 200</h2>
+<h2>Skills at level 100</h2>
 <ul>
 <li>Mage - Mana ball (9), Teather (1), mana-regenration (9), mana-capaticy (9), magic resistance (9), spell speed (6)</li>
 <li>Blood element - Blood movement (9), Aura of blood (9), create blood (1)</li>
@@ -340,61 +275,11 @@ Titles have a direct affect on base stats, usually this is all titles do it is r
 <li>Tulak - Sword combat (9), Dueling (9), Push(9), Pull(9)</li>
 </ul>
 
-<!-- Skill List -->
+<!--Aura Skills, Power = skill-level, then do normal damage every 1 CD.-->
 
-<!--Aura Skills, Power = skill-level, then do normal damage every 1 sec.
+<!--200 for now.-->
 
-Physical bubble - reduces physcial damage taken (X% dammage reduced, Y% mana taken)
-
-level ?, 100 damage, 5 reduced, 95 done. 5% reduction. 
-mana reduced 3. 50% of the damage taken as mana
-500 damage, 25 reduced, 425 done. 5% reduction. 
-mana reduced 13. 50% of the damage taken as mana
-
-Magical bubble - stone skin for magic
-Bubble explode - stone skin for physical 
--- The difference to stone skin is that bubbles are applied on mp value not hp and cannot be shared -- 
-
-Blood movement - Drains hp to increase move speed
-Drain aura - Drains opponents hp around you and recovers your own
-Blood control - control a creature with blood`s movements 
-Aura of blood - aura of damage to blooded creatures
-Create blood - make a pool of blood amount depends on skill level
-Summon bat - summons bat based on skill level - https://finalfantasy.fandom.com/wiki/Black_Bat_(Final_Fantasy_VII)
-Liquid bubble - makes a bubble 
-Bubble pop - pops the bubble (status affects applied)
-explode bubble (damage spell that explodes a bubble)
-
-blood bubble - makes a bubble out of blood (dosen`t require there to be blood)
-sword combat - increases sword combat stats and damage
-dueling - increases stats while dueling (seprate from class increase)
-push - pushes the target x meters
-pull - pulls the target x meters 
-
-Sword/gun/skills
-
-Strength - +11<br>
-Vitality - +91<br>
-Defence - +100 <br>
-Magic - +490<br>
-MDef - +260<br>
-Dexterity - +71<br>
-Sense - +20<br>
-Charisma - +10
-
-Dueling Stats
-Strength - +16<br>
-Vitality - +136<br>
-Defence - +149 <br>
-Magic - +730<br>
-MDef - +387<br>
-Dexterity - +106<br>
-Sense - +30<br>
-Charisma - +15
--->
-
-
-<h2>Hobby at level 200</h2>
+<h2>Hobby at level 100</h2>
 <ul>
 <li>Enchanting - 96</li>
 <li>Item apprasial - 100</li>
@@ -466,9 +351,9 @@ magic defence +10.<!--Increases magic regeneration + 10%,  magic resistance +5%,
 
 <break>
 
-<h2>After level 100</h2>
+<h2>At level 100</h2>
 <p>
-Leveling: I find that the -8% exp gain is more then it first appears as to get this class although I only had to reset twice it puts me far behind other players espically thoes who chose not to reset. At level 200 the leader is at level 317, I assume with a PVE spcific class.
+Leveling: I find that the -8% exp gain is more then it first appears as the exp given is already quite low.
 <br><br>PVP: I join in pvp more now then I use to, as my class leads me in that direction. I find that since I am not very good at pvp the class bonuses help bridge that gap but do not shine as they should. 
 <br><br>Extras: My stats at first glance appear like a slow, low but not detrimental hp and a high attack output. The zero in sense means my weakness to traps and rouge classes is clear. 
 <br>
@@ -508,9 +393,6 @@ Why did you pick a class that is not suited to what you enjoy? It is not like I 
 </p>
 <p>
 Kyber sword vs lazer sword. I get this one alot as the kyber sword is quite rare and lazer sword proforms a very similar purpose. The reduction on my class only works for the Kyber sword not the lazer sword, so that pushes me towards using it. I find the attack higher on a kyber sword but the mp drain is also higher, I am not sure what other hidden affects there are. With the 50% reduction my drain in mp works out as still more of a drain then a lazer sword.
-</p>
-<p>
-What happens after level 100 or even 200? 100-200 is clear here that you unlock skills up to level 9 (not saying when). There are new parts of the world unlocked, pvp, events the usual, really it is about expoloring your options and the world, the quests etc you`re leveling up less often so the focus shifts alot. 200+ for me it`s speculation. All I know is somewhere from 200-300 you get level 10 skills. I am told that there is more of a focus on the non-combat stuff, not that the stuff before goes away what I mean is that the new parts are more often non-combat. 
 </p>
 
 </footer>
@@ -554,141 +436,3 @@ What happens after level 100 or even 200? 100-200 is clear here that you unlock 
 </body>
 
 </html>
-
-
-<!--
-
-Swords - 3 secs
-Bronze 61
-Iron 122
-Steel 245
-Black 306
-White 306
-Mithril 267
-Adamant 490
-Rune 850
-
-Spear - 3.6
-Bronze 111
-Iron 223
-Steel 447
-Black 558
-White -
-Mithril 670
-Adamant 894
-Rune 1117
-
-dagger - 2.4
-Bronze 48
-Iron 96
-Steel 192
-Black 240
-White 240
-Mithril 288
-Adamant 384
-Rune 480
-
-bow ~ 3.0, crossbow 3.6
-
-Enmies 
-Ghosts - Phase shift - increases physical resistance alot, sometimes even 100% for a period of time, Ghosts also have high physical resistance normally. Such as Vanish which makes the user unable to attack but 100% physical resistance for a short period. 
-
-MP Level 2 
-hp 30
-mp 0 
-attack 6 
-magical attak 0
-defence 4
-magic def 0 
-dex 50
-def % 0
-Machine gun, Tonfa 
-
-Ours (blue 2 per level)
-Mp Level 2 
-Hp 31
-Vit 1
-Str 2
-def 1
-All else 0 
-
-Fire attack on me, 19% magic resist, 50% elemental reduction, 50% Mbarrier 
-lets say 14 power,  14*(300/260)*rand = 26 (low level spell vs level 200 with high mdef...)
-26 - 19% - 50% = 8
-@magic 400, 56 becomes 17 
-@power 70 270 becoms 84
-
-physical, with 11 str i do 20 dam. @400, 716 dam. (with -50% hp dead in 2.3 hits.)
-
-Dammage = Power * (mag/mDef) * Rand 
-rand =(RANDBETWEEN(240,271)/100)
-Magic formula the same
-
-
-Barrier - 1/2 Physical damage for a period of time 
-M barrier - 1/2 magical dammage for a period of time 
-- 16 mp to activate and drains mp of target 
-(so you can cast it on an ally)
-
-Mp costs - 
-my mp
-(level * 5) + (mag * 8)
-1000 + 3920 = 4920
-
-avg 100 ~ 1500 ~ 2000
-100 * 5 = 500
-100 * 8 = 800
-total = 1300
-
-Avg 200 ~ 3000 - 4000
-1000 + (200*8) = 2600
-
-5 mp ~ int @1
-4 mp power = 0.5x @ 7
-It costs 6 MP to cast, takes 25 AP to learn, and has a spell power of 14.  @ 9
-4 mp 12 power @ 10
-Fire costs 6 MP to cast, Dark Fire costs 8 MP, and Tri-Fire costs 68 MP. @ cc
-
-@10 magic fomula is easier, 1 mp : 3 power
-cc is more accurate to our game, unknown power 
-9 is the most polished ... 1mp : 2.5 power 
-@7 ties power to magic ...
-
-Ignore Below
-
-str
-Increases Physical Attack: 1 point = 2.62 P.Att
-Increases Double-Attack rate: 1 point = 0.05~ Double Att Rate
-Diminishing return on Double Att Rate.
-Increases Critical Damage: 1 point = 0.3334% Crit Dmg
-Increases Physical Defense Piercing: 1 point = 0.03% P.Def Pierce
-
-dex
-Increases ranged Physical Attack: 1 point = 2.62 P.Att (nah)
-Increase Critcal Rate: 1 points = 0.05~ Crit Rate (or 0.1~ for DG and RM) (higher for rouges?)
-Diminishing return on Crit Rate.
-Reduces Cooldown Time: 1 point = 0.04% CD reduction (dex?)
-Reduces cast time?
-Increases Hit Rate: 1 point = 0.1 Hit Rate (by moving faster)
-Increase Dodge Rate: 1 point = 0.05 Dodge (by moving faster)
-
-mag
-Increases Magic Attack: 1 point = 3.28 M.Att (nah)
-Increase Heal Rate: 1 point = 6.9 Heal Rate (nah)
-0.075% if INT is from equipment, blue stats, or enchantments. (???)
-Increases Magical Defense Piercing: 1 point = 0.03 M.Def Pierce
-Increases Maximum MP: 1 point = 27.5 MP (mag)
-Increases MP Recovery: 1 point = 3 MP Recovery (mag)
-
-vit
-Increases Maximum HP: 1 point = 27.5 HP (14.5?)
-Increases HP Recovery: 1 point = 3 HP Recovery (0.1hp?)
-Increases Critical Resistance: 1 point = 0.1 Crit Resist
-Increases Perfect Critical Resistance: 1 point = 0.04 P.Crit Resist
-Increases Abnormal Status Resistance: 1 point = 0.1 ASR (vit)
-
-??
-Increases Skill Attack Max: 1 point = 5.24 SAM
-
-
---> 

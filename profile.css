@@ -8,7 +8,7 @@ body {
 /*header */
 
  #header{	
-		color: white
+		color: white;
 		/*position: absolute;*/
 		width: 64em;
 		max-width: calc(100% - 4em);
@@ -17,7 +17,6 @@ body {
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
-		color: white;
 		    /*display: inline-flex;
     		align-items: center;*/
 }
@@ -33,13 +32,9 @@ header {
 /* Nav - not aligned on 2nd pages*/
 
 	#nav {
-		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		color: #636363; 
-		position: absolute; 
-		width: inherit;
-		background-color: #f7f7f7;		
-		cursor: default;
+		width: 100%;
 		text-align: center;
 		box-sizing: border-box;
 		padding: 5px;
@@ -88,11 +83,13 @@ header {
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			width: 100%;
+			width: calc(100% - 21em);		
+			padding: 0.5em 1em;			
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
+			background-color: rgba(247, 247, 247, 0.95);
 		}
 
 			#nav.alt ul li {
