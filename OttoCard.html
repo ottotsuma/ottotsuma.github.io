@@ -76,8 +76,10 @@ mana reduced 13. 50% of the damage taken as mana
 Prime = 19% 
 
 Wep speeds are speeds given {this looks good}
-Dammage = Power * (Str/Def) * Rand 
+Dammage =  (Power * (Str/Def) * Rand) * RoundUp
 rand =(RANDBETWEEN(240,271)/100)
+RoundUp - (ROUNDUP(dex,-1)/10) - where its rounding dex to the 10`s
+no need for wep damage it is inlcuded in the enchantments, the rarer the wepon the higher the encantments can be on it eg iron > steel 
 Magic formula the same
 
 Kyber Sword, normal
@@ -558,37 +560,6 @@ What happens after level 100 or even 200? 100-200 is clear here that you unlock 
 
 <!--
 
-Swords - 3 secs
-Bronze 61
-Iron 122
-Steel 245
-Black 306
-White 306
-Mithril 267
-Adamant 490
-Rune 850
-
-Spear - 3.6
-Bronze 111
-Iron 223
-Steel 447
-Black 558
-White -
-Mithril 670
-Adamant 894
-Rune 1117
-
-dagger - 2.4
-Bronze 48
-Iron 96
-Steel 192
-Black 240
-White 240
-Mithril 288
-Adamant 384
-Rune 480
-
-bow ~ 3.0, crossbow 3.6
 
 Enmies 
 Ghosts - Phase shift - increases physical resistance alot, sometimes even 100% for a period of time, Ghosts also have high physical resistance normally. Such as Vanish which makes the user unable to attack but 100% physical resistance for a short period. 
