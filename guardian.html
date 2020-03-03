@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+
+Strength - +1  		Physical Damage
+Vitality - +2		HP 
+Defence - +0 		Physical Damage reduction
+Magic - +0			Magical Damage
+MDef - +0			Magical damage reduction
+Dexterity - +0		Attack Speed 
+
+Sense - +0			Trap Detect
+Charisma - +0		Dialog Pass
+
+hp
+100 + (level * 10) + (vit *14.5) {basic, change on class?}
+2100 + 1320 = 3420
+with equip (-50%) = 1710 
+
+Mp
+(level * 5) + (mag * 8)
+1000 + 3920 = 4920
++ equipment (50%) = 7380
+
+
+Wep speeds are speeds given {this looks good}
+Damage = Power * (Str/Def) * Rand 
+rand =(RANDBETWEEN(240,271)/100)
+Magic formula the same
+
+-->
+<html>
+<head>
+<title>Guardian</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/levels.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header" class="alt">
+<span class="logo"><img src="images/race2.png" alt="sword" height="15%" width="15%" /></span>
+<h1>Guardian</h1>
+<p>A look at the Guardian advanced class</p>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+<ul>
+<li><a href="#intro" class="active">Equipment</a></li>
+<li><a href="#first">Stats</a></li>
+<li><a href="#second">Skills/Spells</a></li>
+<li><a href="#third">Calculations</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+<!-- Introduction -->
+<section id="intro" class="main">
+								<div class="race">
+									<div class="content">
+										<header class="major">
+											<h2>Guardian</h2>
+										</header>
+
+<p>The Guardian is a Tank class that has many defence skills but few attacks.</p>
+<p>Current Class: <font color="green">Guardian</font></p>
+<p>Current Race: <font color="blue">Human</font>.</p>
+<h4>List of equipped items:</h4>
+<ul>
+<li>Head:<font color="blue">Cloak of protection</font> +20 def, + 20 mdef.</li> <br>
+<li>Body:<font color="blue">Plate Mail</font> +40 def.</li><br>
+<li>Hands:<font color="blue">Spongey Gloves</font> +10 def. Protects from recoil damage.</li><br>
+<li>Legs:<font color="blue">Plate Pants</font> +40 def.</li><br>
+<li>Feet:<font color="blue">Plate Boots</font>+40 def.</li><br>
+<li>Acc1:<font color="blue">Ring of medium protection</font> +40 def.</li><br>
+<li>Acc2:<font color="blue">Ring of medium magic protection</font> +40 mdef.</li><br>
+<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +40 mdef.</li><br>
+<li>Acc4:<font color="blue">Ring of medium fortitude</font> +40 vit.</li><br>
+<li>Primary:<font color="blue">Large Mace</font> +50 str.</li><br>
+<li>Secoundary:<font color="blue">Tower shield</font> +40 def. +10 mdef.</li><br>
+</ul>
+</div>
+
+<span class="image"><img src="images/w1.jpg" alt="" /></span>
+</div>		
+</section>
+
+<!-- First Section -->
+<section id="first" class="main special">
+<header class="major">
+<h2>Stats</h2>
+</header>
+
+<div id="CardContainer">
+<div id="inner">
+
+<h4>The following is at level 200.</h4> <!--500 to spend-->
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+<p>
+Strength - +100<br>
+Vitality - +200<br>
+Defence - +102<br>
+Magic - +0<br>
+MDef - +100<br>
+Dexterity - +0<br>
+Sense - +1<br>
+Charisma - +2
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
+<p>
+Strength - +150<br>
+Vitality - +240<br>
+Defence - +342<br>
+Magic - +0<br>
+MDef - +210<br>
+Dexterity - +0<br>
+Sense - +1<br>
+Charisma - +2
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+<p>
+        Strength - +169<br>
+        Vitality - +259<br>
+        Defence - +370<br>
+        Magic - +0<br>
+        MDef - +229<br>
+        Dexterity - +0<br>
+        Sense - +1<br>
+        Charisma - +2
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+<p>
+        Strength - +169<br>
+        Vitality - +259<br>
+        Defence - +370<br>
+        Magic - +0<br>
+        MDef - +229<br>
+        Dexterity - +0<br>
+        Sense - +1<br>
+        Charisma - +2
+</p> </div></div>
+</div>
+
+<h4>Other stats</h4>
+<p>HP = 5756, MP = 1000</p>
+
+</footer>
+</section>
+
+<!-- Second Section -->
+<section id="second" class="main special">
+<header class="major">
+<h2>Skills/Spells</h2>
+</header>
+
+
+<div id="CardContainer">
+<div id="inner">
+
+<h2>Fighter</h2>
+
+<footer class="major"> <!--200-->
+<p>
+	<ul>
+    <li>Charge, Moves quickly in a stright line (9)</li>
+    <li>Heavy blow, High damage output stike (9)</li>
+    <li>Battle shout, Increases the stats of allies (9)</li>
+    <li>High impact, Smashes the ground or target causing an AOE (1)</li>
+    <li>Strength up, Increases Strength(+) (9)</li>
+    <li>Vitality up, Increases Vitality(+) (9)</li>
+    <li>Provoke, Provoke and tease them so that they want to attack you.</li>
+    <li>Shield Bash</li>
+	</ul>
+</p>
+
+<h2>Knight</h2>
+
+
+<p>
+	<ul>
+<li>Def up, Increases Def(+) (9)</li>
+<li>Mdef up, Increases Mdef(+) (9)</li>
+<li>Crippling blow, Cripple the target with a sweeping blow</li>
+<li>Deflective barrier, Projectiles that hit you are reflected back at the caster. (still take damage)</li>
+<li>Challenge, Mark target enemy. If they die within x secounds, you are healed the amount of hp they lost.</li>           
+	</ul>
+</p>
+
+</div></div>
+<footer>
+
+<h2>Guardian</h2>
+<ul>
+<li>Guardian Angel, Allies in melee range redirect X% of received damage to you.</li>
+<li>Defence Up 2, Increases Def(+) (9)</li>
+<li>Cover</li>
+<li>Sheltron</li>
+<li>rampart</li>
+<li>sentinal</li>
+<li>Testudo</li>
+<li>push back</li>
+<li>Shelter (healing)</li>
+<li>Hallowed ground</li>
+<li>Sancturary (heal allies)</li>
+<li>Stand your ground!(allies)</li>
+</ul>
+
+</footer>
+</section>
+
+<!-- Third Race -->
+<section id="third" class="main special">
+<header class="major">
+
+<h2>Calculations</h2>
+</header>
+<p>HP = (level*10)+(Vit*14.5) = 5756 <br>
+	MP = (level*5)+(Mag*8) = 1000 <br>
+	Using Heavy Blow (1) with 13 power against yourself will deal ~14 damage. <br>
+    Heavy Blow (9) at 72 power deals ~87 damage. <br>
+    This guaridan`s defence is really high!, you will need 66 hits with heavy blow (9).
+</p>
+
+<p>Guardian VS Otto<br>
+	Vit 91, Def 100, Mag, 490, Dex 79 (base)<br>
+	Heavy Blow (72) vs Auto (1). Passive skills only. Not including anyother active skills such as hp drain, active defences. <br>
+    Heavy Blow (9) deals 155, auto deals 10. Guard; 98.2% hp, Otto (with barrier); 96% hp.<br>
+    With skills the guard would be taking less damage and Otto Healing and dealing bleed damage/using skills.<br>
+    <br><br>
+    At level 100 <br>
+    With Skills, if the guardian uses heavy blow 10 times, otto using aura skills, nothing over 1 power.<br>
+    Otto: 31.2% hp, Guardian: 66.8% hp.<br>
+    Guardians are really good at what they do. 
+</p>
+
+
+<!--Power = base power, e.g. 14 then each level add`s half base power.-->
+<h2>Hidden Bonuses</h2>
+
+<div id="CardContainer">
+<div id="inner">
+<button class="collapsible">Show</button>
+<div class="contentInner">
+
+	<div class="card"><img src="images/w1.jpg" alt="Guardian" style="width:100%">
+		<div class="container">
+		<h4 style="color:green;">Guardian</h4> 
+		<p> +2 def, 5% resistance to normal weapons.
+		<br> A tank class that lives to protect.
+		</p></div></div>
+
+<div class="card"><img src="images/notsure.jpg" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:green;">Bakeneko</h4> 
+<p>Shared with partner: <br>
++5 Charisma.
+<br><br>
+It does not share it`s combat skills or stats, an Bakeneko has a wide range of skills.
+</p> </div></div>
+
+<div class="card"><img src="images/jane.png" alt="human" style="width:100%">
+    <div class="container"><h4 style="color:blue;">Human</h4> 
+    <p>
+    Sense - +1
+    Charisma - +2
+    <br> (Can use all tools and weapons)
+    </p> </div></div>
+
+<div class="card"><img src="images/w5.jpg" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:blue;">Plate Mail</h4> 
+<p>
++40 Def. 
+</p> </div></div>
+
+
+</div></div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<section>
+<h4>Extra</h4>
+
+<a href="home.html" class="button">Home page</a>
+
+</section>
+<section>
+<h4>Contact</h4>
+<dl class="alt">
+<dt>Address</dt>
+<dd>14 &bull; Volcanic Island, Magic acadamy &bull; Albion</dd>
+<dt>Email</dt>
+<dd><a href="#">Information@MA.Al</a></dd>
+</dl>
+</section>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+

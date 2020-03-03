@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+
+Strength - +1  		Physical Damage
+Vitality - +2		HP 
+Defence - +0 		Physical Damage reduction
+Magic - +0			Magical Damage
+MDef - +0			Magical damage reduction
+Dexterity - +0		Attack Speed 
+
+Sense - +0			Trap Detect
+Charisma - +0		Dialog Pass
+
+hp
+100 + (level * 10) + (vit *14.5) {basic, change on class?}
+2100 + 1320 = 3420
+with equip (-50%) = 1710 
+
+Mp
+(level * 5) + (mag * 8)
+1000 + 3920 = 4920
++ equipment (50%) = 7380
+
+
+Wep speeds are speeds given {this looks good}
+Damage = Power * (Str/Def) * Rand 
+rand =(RANDBETWEEN(240,271)/100)
+Magic formula the same
+
+-->
+<html>
+<head>
+<title>Inquisitor</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/levels.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header" class="alt">
+<span class="logo"><img src="images/race2.png" alt="sword" height="15%" width="15%" /></span>
+<h1>Inquisitor</h1>
+<p>A look at the Inquisitor advanced class</p>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+<ul>
+<li><a href="#intro" class="active">Equipment</a></li>
+<li><a href="#first">Stats</a></li>
+<li><a href="#second">Skills/Spells</a></li>
+<li><a href="#third">Calculations</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+<!-- Introduction -->
+<section id="intro" class="main">
+								<div class="race">
+									<div class="content">
+										<header class="major">
+											<h2>Inquisitor</h2>
+										</header>
+
+<p>The Inquisitor is a rare class. It is a battle-mage with faith that can use holy objects but cannot use unholy objects </p>
+<p>Current Class: <font color="green">Inquisitor</font></p>
+<p>Current Race: <font color="blue"> Human</font>.</p>
+<h4>List of equipped items:</h4>
+<ul>
+<li>Head:<font color="green">Belivers Cross </font> Magic + 40.</li> <br>
+<li>Body:<font color="green"> Inquisitoral Cloak </font> Reduces damage from unholy attacks. +20 mdef. +10 vit.</li><br>
+<li>Hands:<font color="blue"> Inquisitoral hands</font> +15 mag. +20 mdef</li><br>
+<li>Legs:<font color="blue"> Inquisitoral Bottoms</font> mdef + 40.</li><br>
+<li>Feet:<font color="blue"> Military Boots</font> +20 vit, +20 str.</li><br>
+<li>Acc1:<font color="blue"> Ring of Medium Strength</font> +40 str.</li><br>
+<li>Acc2:<font color="blue"> Ring of the divine</font> +10 def, +10 mdef. +1 total faith.</li><br>
+<li>Acc3:<font color="blue">Pendent of Medium Magic </font> +40 mag.</li><br>
+<li>Acc4:<font color="blue"> Ring of Medium Magic</font> +40 mag.</li><br>
+<li>Primary:<font color="green">Holy Warhammer</font> Bonus damage to the unholy. 10% chance to set target on fire. +30 strength</li><br>
+<li>Secoundary:<font color="blue">Holy Book</font> Deals ranged damage to unholy only. +1 total faith. +10 magic.</li><br>
+</ul>
+									</div>
+
+									<span class="image"><img src="images/inquisitor.jpg" alt="" /></span>
+								</div>		
+</section>
+
+<!-- First Section -->
+<section id="first" class="main special">
+<header class="major">
+<h2>Stats</h2>
+</header>
+
+<div id="CardContainer">
+<div id="inner">
+
+<h4>The following is at level 200.</h4>
+
+										<div class="card">
+										<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+										<p>
+										Strength - +150<br>
+										Vitality - +100<br>
+										Defence - +50<br>
+										Magic - +150<br>
+										MDef - +50<br>
+										Dexterity - +0<br>
+										Sense - +1<br>
+										Charisma - +2
+										</p> </div></div>
+
+										<div class="card">
+										<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
+										<p>
+										Strength - +240<br>
+										Vitality - +130<br>
+										Defence - +60<br>
+										Magic - +255<br>
+										MDef - +140<br>
+										Dexterity - +0<br>
+										Sense - +1<br>
+										Charisma - +2
+										</p> </div></div>
+
+										<div class="card">
+										<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+										<p>
+											Strength - +259<br>
+											Vitality - +130<br>
+											Defence - +60<br>
+											Magic - +274<br>
+											MDef - +140<br>
+											Dexterity - +0<br>
+											Sense - +1<br>
+											Charisma - +2
+										</p> </div></div>
+
+										<div class="card">
+										<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+										<p>
+											Strength - +259<br>
+												Vitality - +130<br>
+												Defence - +60<br>
+												Magic - +274<br>
+												MDef - +140<br>
+												Dexterity - +0<br>
+												Sense - +1<br>
+												Charisma - +2
+										</p> </div></div>
+</div>
+
+<h4>Other stats</h4>
+<p>HP = 3885, MP = 3192</p>
+
+</footer>
+</section>
+
+<!-- Second Section -->
+<section id="second" class="main special">
+<header class="major">
+<h2>Skills/Spells</h2>
+</header>
+
+
+<div id="CardContainer">
+<div id="inner">
+
+<h2>Mage</h2>
+
+<footer class="major">
+<p>
+	<ul>
+	<li>Mana ball, cretes a ball of mana (9) </li>
+	<li>Teather, Attaches a mana-teather to the target (2)</li>
+	<li>Lightning, Calls down a strike of Lightning (9)</li>
+	<li>Magic resistance, Adds resistance to magic (%) (9)</li>
+	<li>Magic Up, Increases Magic (+) (9)</li>
+	</ul>
+</p>
+
+<h2>Fighter</h2>
+
+
+<p>
+	<ul>
+	<li>Charge, Moves quickly in a stright line (9)</li>
+	<li>Heavy blow, High damage output stike (9)</li>
+	<li>Battle shout, Increases the stats of allies (9)</li>
+	<li>High impact, Smashes the ground or target causing an AOE (9)</li>
+	<li>Strength up, Increases Strength(+) (9)</li>
+	</ul>
+</p>
+
+</div></div>
+<footer>
+
+<h2>Inquisitor</h2>
+<ul>
+<li>Inquisitoral Lightning, Causes a spray of holy Lightning (9)</li>
+<li>Holy Strike, Adds holy damage to a weapon (9) mag*9%</li>
+<li>Holy Aura, Creates a holy aura around the caster, damages unholy targets (9)</li>
+<li>Sense Evil, Sense is a target is evil or not (9)</li>
+<li>Sense Weakness, Senses the targets weakness (9)</li>
+<li>Drain evil, absorbs hp from an unholy target (9) 90%</li>
+<li>Purge the unholy, Increase damage to unholy. (9)</li>
+<li>Faith, Increases total faith (+) (9)</li>
+<li>Judgement (9), 2x all holy damage against target. (mag*3)+10, ignores medf, used once.</li>
+<li>Work of the faithful, Increases allies stats near you (only the faithful) (+) (9)</li>
+<li>Stalwart, Increases chance of resisting charm and illisuon effects (%) (9)</li>
+<li>Protect from evil (p), Spell that increases the targets defences against evil attacks (+) (9)</li>
+<li>Protect from evil (m), Spell that increases the targets magic defences against evil attacks (+) (9)</li>
+</ul>
+
+</footer>
+</section>
+
+<!-- Third Race -->
+<section id="third" class="main special">
+<header class="major">
+
+<h2>Calculations</h2>
+</header>
+<p>
+	HP = (level*10)+(Vit*14.5) = 3885 <br>
+	MP = (level*5)+(Mag*8) = 3192 <br>
+	Casting Lightining with 14 power against yourself will deal 68~73 damage. <br>
+	Lighting (9) at 70 power deals 329 ~ 364 damage. <br>
+	Heavyblow does more damage because of the inquisitor`s low defence (777 damage).
+</p>
+
+<p>
+	Guardian Vs Inquisitor <br>
+	Inq will use Magic vs Guardian, and the Guardian uses physical. <br>
+	Lightning at 70 power. Heavy Blow 72.<br>
+	After 10 moves, the inquisitor is dead. -35% hp compared to 62% hp remaining. <br>
+	The inquisitor has more spread out stats letting it damage multiple ways, however the guardian will win a 1v1.<br>
+	If you can only attack using the same base skill...<br>
+	However if the guardian was evil...<br>
+	Opening with judgment (2x against evil), then following with holy strike (77, +9% of mag), inq 6%, guard, 10%. <br>
+	with the warhammers bonus damage the guard has 6.8% hp left.<br>
+	Guards sure are tanky.<br>
+</p>
+<!--Power = base power, e.g. 14 then each level add`s half base power.-->
+<h2>Hidden Bonuses</h2>
+
+<div id="CardContainer">
+<div id="inner">
+<button class="collapsible">Show</button>
+<div class="contentInner">
+
+	<div class="card"><img src="images/inquisitor.jpg" alt="Krogan" style="width:100%">
+		<div class="container">
+		<h4 style="color:green;">Inquisitor</h4> 
+		<p> A battle-mage with faith
+		<br> (Can use holy objects, cannot use unholy objects)
+		</p></div></div>
+
+<div class="card"><img src="images/dove.jpg" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:blue;">Dove</h4> 
+<p>Shared with partner: <br>
+Can bring and send messages. When not in combat hp recovery +10%. 
+<br><br>
+It does not share it`s combat skills or stats, but a Dove is poor in combat.
+</p> </div></div>
+
+<div class="card"><img src="images/jane.png" alt="human" style="width:100%">
+	<div class="container"><h4 style="color: blue">Human</h4> 
+	<p>
+	Sense - +1
+	Charisma - +2
+	<br> (Can use all tools and weapons)
+	</p> </div></div>
+
+<div class="card"><img src="images/hammer.jpg" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:green;">Holy warhammer</h4> 
+<p>
+Bonus damage to the unholy (ignores defence).
+10% chance to set target on fire. +30 strength.
+</p> </div></div>
+
+
+</div></div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<section>
+<h4>Extra</h4>
+
+<a href="home.html" class="button">Home page</a>
+
+</section>
+<section>
+<h4>Contact</h4>
+<dl class="alt">
+<dt>Address</dt>
+<dd>14 &bull; Volcanic Island, Magic acadamy &bull; Albion</dd>
+<dt>Email</dt>
+<dd><a href="#">Information@MA.Al</a></dd>
+</dl>
+</section>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

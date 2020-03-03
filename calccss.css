@@ -1,0 +1,58 @@
+.container{
+    position: absolute;
+    margin-left: 50px; /* Half of width */
+}
+
+.player {
+    margin: 0 auto;
+    width: 500px;
+    border: solid 1px lightgray;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 5px 0 lightgray;
+    float: left;
+}
+
+.enemy {
+    margin: 0 auto;
+    width: 500px;
+    border: solid 1px lightgray;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 5px 0 lightgray;
+    float: right;
+}
+
+input[type="text"], input[type="number"], label {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  body {
+    background-color:black;
+    color: lightgray;
+    font-family: 'Impact';
+  }
+
+
+  .btn {
+      margin-top: 1100px;
+      margin-right: 0px;
+      font-family: 'Impact';
+      font-size: 20px;
+      
+  }
+  #form {
+    margin-top: 20px;
+  }
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0%;
+  color: lightgray;
+  font-family: 'Impact';
+  margin-left: 35%;
+}

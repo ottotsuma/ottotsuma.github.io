@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+
+Strength - +1  		Physical Damage
+Vitality - +2		HP 
+Defence - +0 		Physical Damage reduction
+Magic - +0			Magical Damage
+MDef - +0			Magical damage reduction
+Dexterity - +0		Attack Speed 
+
+Sense - +0			Trap Detect
+Charisma - +0		Dialog Pass
+
+hp
+100 + (level * 10) + (vit *14.5) {basic, change on class?}
+2100 + 1320 = 3420
+with equip (-50%) = 1710 
+
+Mp
+(level * 5) + (mag * 8)
+1000 + 3920 = 4920
++ equipment (50%) = 7380
+
+
+Wep speeds are speeds given {this looks good}
+Damage = Power * (Str/Def) * Rand 
+rand =(RANDBETWEEN(240,271)/100)
+Magic formula the same
+
+-->
+<html>
+<head>
+<title>Death Knight</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/levels.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header" class="alt">
+<span class="logo"><img src="images/race2.png" alt="sword" height="15%" width="15%" /></span>
+<h1>Death Knight</h1>
+<p>A look at the Death Knight advanced class</p>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+<ul>
+<li><a href="#intro" class="active">Equipment</a></li>
+<li><a href="#first">Stats</a></li>
+<li><a href="#second">Skills/Spells</a></li>
+<li><a href="#third">Calculations</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+<!-- Introduction -->
+<section id="intro" class="main">
+                    <div class="race">
+                        <div class="content">
+                            <header class="major">
+                                <h2>Death Knight</h2>
+                            </header>
+
+<p>The Death Knight is a warrior class that uses his strength to fully eradicate their foes</p>
+<p>Current Class: <font color="red">Death Knight</font></p>
+<p>Current Race: <font color="red">Dracon</font>.</p>
+<h4>List of equipped items:</h4>
+<ul>
+<li>Head:<font color="purple">Kitava's Thirst</font> 15% reduced Cast Speed, +20 def, +40 mag.</li> <br>
+<li>Body:<font color="purple">Death's Oath</font> Movement Speed: -5%, +8% resistance to death, +18 def, +30 vit, 1% life drain, You take 450 Chaos Damage per second for 3 seconds on Kill.</li><br>
+<li>Hands:<font color="purple">Meginord's Vise</font> +10% damage, +50 str, +10 def, -2% life drain.</li><br>
+<li>Legs:<font color="blue">Plate Pants</font> +40 def.</li><br>
+<li>Feet:<font color="purple">Wake of Destruction</font> +20 def, 10% chance to do AOE damage, add`s lighting damage to attacks.</li><br>
+<li>Acc1:<font color="blue">Ring of medium magic</font> +40 mag.</li><br>
+<li>Acc2:<font color="blue">Ring of medium magic protection</font> +40 mdef.</li><br>
+<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +40 mdef.</li><br>
+<li>Acc4:<font color="blue">Ring of medium strength</font> +40 str.</li><br>
+<li>Weapon:<font color="purple">Bravura</font> +42 str, +49 vit.</li><br>
+<br>
+</ul>
+</div>
+
+
+
+<span class="image"><img src="images/deathknight.jpg" alt="" /></span>
+</div>		
+</section>
+
+<!-- First Section -->
+<section id="first" class="main special">
+<header class="major">
+<h2>Stats</h2>
+</header>
+
+<div id="CardContainer">
+<div id="inner">
+
+<h4>The following is at level 200.</h4> <!--500 to spend-->
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+<p>
+Strength - +202<br>
+Vitality - +101<br>
+Defence - +0<br>
+Magic - +201<br>
+MDef - +0<br>
+Dexterity - +0<br>
+Sense - +0<br>
+Charisma - +0
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
+<p>
+    Strength - +334<br>
+    Vitality - +180<br>
+    Defence - +108<br>
+    Magic - +281<br>
+    MDef - +80<br>
+    Dexterity - +0<br>
+    Sense - +0<br>
+    Charisma - +0
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+<p>
+    Strength - +334<br>
+    Vitality - +180<br>
+    Defence - +108<br>
+    Magic - +281<br>
+    MDef - +80<br>
+    Dexterity - +0<br>
+    Sense - +0<br>
+    Charisma - +0
+</p> </div></div>
+
+<div class="card">
+<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+<p>
+    Strength - +334<br>
+    Vitality - +180<br>
+    Defence - +108<br>
+    Magic - +281<br>
+    MDef - +80<br>
+    Dexterity - +0<br>
+    Sense - +0<br>
+    Charisma - +0
+</p> </div></div>
+</div>
+
+<h4>Other stats</h4>
+<p>HP = 4610, MP = 3248</p>
+<p>As you can see skills are not included here.</p>
+
+</footer>
+</section>
+
+<!-- Second Section -->
+<section id="second" class="main special">
+<header class="major">
+<h2>Skills/Spells</h2>
+</header>
+
+
+<div id="CardContainer">
+<div id="inner">
+
+<h2>Warrior</h2>
+
+<footer class="major"> <!--200-->
+<p>
+<ul>
+<li>Charge, Moves quickly in a stright line (9)</li>
+<li>Heavy blow, High damage output stike (9)</li>
+<li>High impact, Smashes the ground or target causing an AOE (1)</li>
+<li>Strength up, Increases Strength(+) (9)</li>
+<li>Vitality up, Increases Vitality(+) (9)</li>
+<li>Berserk</li>
+<li>Blood Reckoning</li>
+<li>Outrage</li>
+<li>Arc Divider</li>
+<li>Decapitate</li>
+<li>Wild Whirl</li>
+<li>Blaze Breaker</li>
+</ul>
+</p>
+
+<h2>Knight</h2>
+<p>
+<ul>
+<li>Def up, Increases Def(+) (9)</li>
+<li>Mdef up, Increases Mdef(+) (9)</li>
+<li>Crippling blow, Cripple the target with a sweeping blow</li>
+<li>Provoke, Provoke and tease them so that they want to attack you.</li>
+</ul>
+</p>
+
+</div></div>
+<footer>
+
+<h2>Death Knight</h2>
+<ul>
+<li>Grave Armor</li>
+<li>Aura of the Damned</li>
+<li>Soulflay</li>
+<li>Soulreaver</li>
+<li>Terrorize</li>
+<li>Unholy Vigor</li>
+<li>Necrostrike</li>
+<li>Siphoning Strikes</li>
+<li>Shadow Meld</li>
+<li>Death's Embrace</li>
+<li>Revenant</li>
+</ul>
+
+</footer>
+</section>
+
+<!-- Third Race -->
+<section id="third" class="main special">
+<header class="major">
+
+<h2>Calculations</h2>
+</header>
+<p>HP = (level*10)+(Vit*14.5) = 4610 <br>
+MP = (level*5)+(Mag*8) = 3248 <br>
+</p>
+<p>
+    DeathKnight vs Guardian @ level 100 <br>
+    With just stats no other skills<br>
+    Guardian heavyblow does 293 base damage, Deathknight does 118 with heavyblow, but 230 with magic of the same power<br>
+    To simulate a battle between these two is hard as a Deathknights power is very dependent on the enviroment<br>
+    I believe the Deathknight with it`s supperior equipment would win
+</p>
+
+<!--Power = base power, e.g. 14 then each level add`s half base power.-->
+<h2>Hidden Bonuses</h2>
+
+<div id="CardContainer">
+<div id="inner">
+<button class="collapsible">Show</button>
+<div class="contentInner">
+
+<div class="card"><img src="images/horse.jpg" alt="BladeSinger" style="width:100%">
+<div class="container">
+<h4 style="color:red;">Death Knight</h4> 
+<p> A knight ... didn`t he die? 
+<br><br>(Unknown)
+<!--Cannot die in one hit from full hp, weak to holy, +2def+2mdef-->
+</p></div></div>
+
+<div class="card"><img src="images/dragon.jpg" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:orange;">Dragon</h4> 
+<p>Shared with partner: <br>
+?????
+<br><br>
+It does not share it`s combat skills or stats, but a dragon is amazing in combat.
+</p> </div></div>
+
+<div class="card"><img src="images/dracon.png" alt="Dracon" style="width:100%">
+<div class="container"><h4 style="color:red;">Dracon</h4> 
+<p>
+Strength +2
+Magic +1
+Vitality +1   
+<br> <br>Resistance based on ancestry (color)
+</p> </div></div>
+
+<div class="card"><img src="images/kitavasthirst.png" alt="Pmage" style="width:100%">
+<div class="container"><h4 style="color:purple;">Kitava's Thirst</h4> 
+<p>
+15% reduced Cast Speed, +20 def, +40 mag.
+</p> </div></div>
+
+
+</div></div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<section>
+<h4>Extra</h4>
+
+<a href="home.html" class="button">Home page</a>
+
+</section>
+<section>
+<h4>Contact</h4>
+<dl class="alt">
+<dt>Address</dt>
+<dd>14 &bull; Volcanic Island, Magic acadamy &bull; Albion</dd>
+<dt>Email</dt>
+<dd><a href="#">Information@MA.Al</a></dd>
+</dl>
+</section>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+

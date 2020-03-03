@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<header>
+    <title>
+Damage Calculator
+        </title>
+        <link rel="stylesheet" type="text/css" href="calccss.css">
+</header>
+<body>
+        <a href="home.html"><h1>Damage Calculator</h1></a>
+    <div class="container">
+            <div class="player">
+        <span class="image" style="margin: 0 auto;"> <img src="images/sith1.jpg" alt="image" style="width:300px;height:300px;"></span>
+        <div id="form">
+                <label for="Level">Level</label>
+                <input type="number" min="1" max="100" value="100" id="Level">
+                <label for="Power">Skill Power</label>
+                 <input type="number" value="40" id="Power">
+                <label for="Vit">Vitality</label>
+               <input type="number" value="100" id="Vit">
+                <label for="Strength">Strength</label>
+                <input type="number" value="100" id="Strength">
+                <label for="Magic">Magic</label>
+                <input type="number" value="0" id="Magic">
+                <label for="Defense">Defense</label>
+                <input type="number" value="50" id="Defense">
+                <label for="Mdef">Magic Defense</label>
+                <input type="number" value="50" id="Mdef">
+                <label for="Dex">Dexterity</label>
+                <input type="number" value="100" id="Dex">
+                
+                <p>Your physical damage done is:</p><p id="answer"></p>
+                <br>
+                <p>Your magical damage done is:</p><p id="MDam"></p>
+                <br>
+                <p>Your Critial chance is:</p><p id="logCrit"></p>
+                <br>
+                <p>Your starting hp is:</p><p id="Health"></p>
+    </div> </div>
+
+    <div class="enemy">
+            <span class="image" style="margin: 0 auto;"> <img src="images/51.jpg" alt="image" style="width:300px;height:300px;"></span>
+            <div id="form">
+                    <label for="Level">Level</label>
+                    <input type="number" min="1" max="100" value="100" id="ELevel">
+                    <label for="Power">Skill Power</label>
+                     <input type="number" value="40" id="EPower">
+                    <label for="Vit">Vitality</label>
+                   <input type="number" value="50" id="EVit">
+                    <label for="Strength">Strength</label>
+                    <input type="number" value="0" id="EStrength">
+                    <label for="Magic">Magic</label>
+                    <input type="number" value="100" id="EMagic">
+                    <label for="Defense">Defense</label>
+                    <input type="number" value="100" id="EDefense">
+                    <label for="Mdef">Magic Defense</label>
+                    <input type="number" value="50" id="EMdef">
+                    <label for="Dex">Dexterity</label>
+                    <input type="number" value="100" id="EDex">
+                    <p>Enemy physical damage done is:</p><p id="Eanswer"></p>
+                    <br>
+                    <p>Enemy magical damage done is:</p><p id="EMDam"></p>
+                    <br>
+                    <p>Enemy Critial chance is:</p><p id="ElogCrit"></p>
+                    <br>
+                    <p>Enemy starting hp is:</p><p id="EHealth"></p>
+        </div> </div>
+        <button id="calculate" class="btn">Calculate!</button>
+</div>
+
+</body>
+<footer>
+</footer>
+<script src="calc.js"></script>
+</html>
+    
+
+      
