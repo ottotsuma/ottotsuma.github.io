@@ -1,0 +1,52 @@
+$header-text-color: black;
+$p-text-color: black;
+
+@import 'header';
+@import 'nav';
+@import 'image';
+@import 'card';
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+background: lightskyblue
+}
+
+
+h2 {
+ color: $header-text-color;
+ text-decoration: underline;
+ font-size: 30px;
+ text-align: center;
+ padding: 5px;
+}
+
+p {
+ color: $p-text-color;
+ font-size: 20px;
+ text-align: center;
+ padding: 10px;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+
+/* Main */
+
+	#main {
+		background-color: white;
+		border-radius: 0.25em;
+    width: 85%;
+    align-self: center;
+    margin-left: 7%;
+	}
+
+/*Hide Div at size too small*/
+  @media only screen and (max-width: 1026px) {
+      #CardContainer {
+          display: none;
+      }
+  }
