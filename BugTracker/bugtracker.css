@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: skyblue;
+  color: black;
+  font-size: 25px;
+}
+
+.issuesBox{
+  width: 100%;
+  margin: 10px;
+  max-width: 50%;
+}
+
+.container {
+  width: 100%;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.content1 {
+  width: 100%;
+  margin: 10px;
+  border: 2px solid black;
+  max-width: 50%;
+}
+
+h3 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.footer{
+  height: 10vh;
+  width: 100%;
+  margin: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.button {
+  position: relative;
+  background-color: black;
+  border: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  border: 2px solid white;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.form-control {
+  border: 2px solid black;
+  max-width: 90%;
+}
+#issueSeverityInput {
+  max-width: 15%;
+}
+
+.Image {
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 55%;
+  margin-top: 6%;
+}
+.Image-box{
+text-align: center;
+padding: 10px 20px;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 40em) {
+.Image {
+display: none;
+}
+}
