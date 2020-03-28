@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 
-<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold).
 
 (basic classes are the options given when you start, does not have to always be normal type class. Advanced classes are just classes beyound the basic classes, can also be normal type.)
 
 Items follow a smililar logic
 
-Races follow no such pattern. Each as benifits and disadvantages of it`s own. 
+Races follow no such pattern. Each as benifits and disadvantages of it`s own.
 
-Spells/Skills are on a spheregrid alongside attribute nodes (stat change nodes). They are often blocked (greyed out) until a certen level or criteria is met. Once unlocked a player can dump level points into the node until full. So at level 30 Spells/Skills beyond the basic`s are unlocked up to a cap of 3, So a player can only put a maximum of 3 points into a spell (unless otherwise stated). This happens again at level 80 the cap is raised to 6 and players can now improve the potency/cast time/range/area/etc. Of each of their unlocked skills. 
+Spells/Skills are on a spheregrid alongside attribute nodes (stat change nodes). They are often blocked (greyed out) until a certen level or criteria is met. Once unlocked a player can dump level points into the node until full. So at level 30 Spells/Skills beyond the basic`s are unlocked up to a cap of 3, So a player can only put a maximum of 3 points into a spell (unless otherwise stated). This happens again at level 80 the cap is raised to 6 and players can now improve the potency/cast time/range/area/etc. Of each of their unlocked skills.
 
 Strength - +1
 Vitality - +2
-Defence - +0 
+Defence - +0
 Magic - +0
 MDef - +0
 Dexterity - +0
@@ -21,7 +21,7 @@ Sense - +0
 Charisma - +0
 
 Race List
-blue -3 
+blue -3
 Argonian sense +3  (resistance to poison)
 Elves dex +2, magic +2 char +1
 Gonomes dex +1 char +2
@@ -31,24 +31,24 @@ green -5
 Asari char +3 mag +2 - Increased sucess with mind related spells on opposite gender
 drell dex +3 sense +1
 dark elves (drow), dex +3, sense +2, char -1 (dark vision), bonuses to camoflage in the dark
-Kobolds 
+Kobolds
 wearwolf, str +3, sense +2
-turtle people 
-volus 
-vorcha 
-salarian 
+turtle people
+volus
+vorcha
+salarian
 
 red - ?
-Guado 
+Guado
 Dragon-half?
-Dracon str +2, magic +1, vit +1 Resistance based on ancestry (color) 
+Dracon str +2, magic +1, vit +1 Resistance based on ancestry (color)
 Hobgoblin
 Ogre
 troll
 eliksni
 giants
 ronso
-protheans 
+protheans
 Lich, mag +5, charm -5, dex -1, no stamina
 -->
 
@@ -57,7 +57,7 @@ Lich, mag +5, charm -5, dex -1, no stamina
 <title>Race</title>
 <script  type="text/javascript">
     function changeImg(imgNumber)	{
-        var myImages = ["assets/css/images/image4.jpg", "assets/css/images/image1.jpg", "assets/css/images/image2.jpg", "assets/css/images/image3.jpg", "assets/css/images/image5.jpg", "assets/css/images/image6.jpg", "assets/css/images/image7.jpg", "assets/css/images/image8.jpg", "assets/css/images/image9.jpg", "assets/css/images/image10.jpg", "assets/css/images/image11.jpg", "assets/css/images/image12.jpg", "assets/css/images/image13.jpg", "assets/css/images/image14.jpg"]; 
+        var myImages = ["assets/css/images/image4.jpg", "assets/css/images/image1.jpg", "assets/css/images/image2.jpg", "assets/css/images/image3.jpg", "assets/css/images/image5.jpg", "assets/css/images/image6.jpg", "assets/css/images/image7.jpg", "assets/css/images/image8.jpg", "assets/css/images/image9.jpg", "assets/css/images/image10.jpg", "assets/css/images/image11.jpg", "assets/css/images/image12.jpg", "assets/css/images/image13.jpg", "assets/css/images/image14.jpg"];
         var imgShown = document.body.style.backgroundImage;
         var newImgNumber =Math.floor(Math.random()*myImages.length);
         document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
@@ -85,27 +85,34 @@ Lich, mag +5, charm -5, dex -1, no stamina
 <p>A compiled list of races</p>
 </header>
 
-<!-- Nav -->
-<nav id="nav">
-<ul>
-<li><a href="#intro" class="active">Intro</a></li>
-<li><a href="#first">Basic Races</a></li>
-<li><a href="#second">Rare Races</a></li>
-<li><a href="#third">Hidden Races</a></li>
-</ul>
-</nav>
-
 <!-- Main -->
 <div id="main">
+
+
+  <!-- Nav -->
+  <nav id="nav">
+  <ul>
+  <li><a href="#intro" class="active">Intro</a></li>
+  <li><a href="#first">Basic Races</a></li>
+  <li><a href="#second">Rare Races</a></li>
+  <li><a href="#third">Hidden Races</a></li>
+  </ul>
+  </nav>
+
 
 <!-- Introduction -->
 <section id="intro" class="main">
 <div class="race">
 <div class="content">
 <header class="major">
-<h2>Intro</h2>
+<h2>Introduction to Race</h2>
 </header>
-<p>Your starting race is human and you can change race though in game events and quests. Your race will have stat differences to other races and sometimes unique charteristsics, but overall race makes little difference to game stats</p></div></div>						
+<h3>Starting Race</h3>
+<p>Your starting race is human and you can change race though in game events and quests. Your race will have stat differences to other races and sometimes unique charteristsics, but overall race makes little difference to game stats. Humans can have high Charisma when speced into, but their other stats will rely on their race. They make good commanders.</p>
+<h3>Unique Charteristsics</h3>
+<p>While each race can recieve on the face of it small stat buffs, skills, abilities, etc. The real value of a race is in how it can be upgraded. Like you class you can put skill points into your race. As such if you become an Orc you might find that the race skills give more strength then your class, but doing so will not unlock class skills. So at level 30 an Orc fighter will have more strength then a Human fighter, the Human fighter is going to have access to more fighter skills. (Assuming he put all his points into fighter, and the Orc put points into "Orc".)</p>
+
+</div></div>
 </section>
 
 <!-- First Section -->
@@ -121,16 +128,17 @@ Lich, mag +5, charm -5, dex -1, no stamina
 <div id="inner">
 
 <div class="card"><img src="images/jane.png" alt="human" style="width:100%">
-<div class="container"><h4><b>Human</b></h4> 
+<div class="container">
+<h4><font color="blue">Human</font></h4>
 <p>
 Sense - +1
 Charisma - +2
-<br> (Can use all tools and weapons)
+<br> (Can use all simple tools and weapons)
 </p> </div></div>
 
 <div class="card"><img src="images/orc.jpg" alt="orc" style="width:100%">
 <div class="container">
-<h4><b>Orc</b></h4> 
+<h4><font color="blue">Orc</font></h4>
 <p>Strength - +2
 Vitality - +1
 <br> (Small health regen when in combat)
@@ -138,21 +146,21 @@ Vitality - +1
 
 <div class="card"><img src="images/gnoll.jpg" alt="gnoll" style="width:100%">
 <div class="container">
-<h4><b>Gnoll</b></h4> 
+<h4><font color="blue">Gnoll</font></h4>
 <p>Dexterity - +1
 Sense - +2<br>
-(Can gain access to spells early from their Demon Lord)</p></div></div>
+(Can gain access to spells/abilities early from their Demon Lord)</p></div></div>
 
 <div class="card"><img src="images/cat.jpg" alt="Miqo'te" style="width:100%">
 <div class="container">
-<h4><b>Miqo'te</b></h4> 
+<h4><font color="blue">Miqo'te</font></h4>
 <p>Dexterity - +1
 Sense - +2
 <br> (Their claws given them a built in wepon)</p></div></div>
 
 <div class="card"><img src="images/dwarf.jpg" alt="Dwarf" style="width:100%">
 <div class="container">
-<h4><b>Dwarf</b></h4> 
+<h4><font color="blue">Dwarf</font></h4>
 <p>Strength - +1
 Vitality - +2
 <br>(Small resistance to spell effects, but lower sucess with spells)
@@ -178,7 +186,8 @@ Vitality - +2
 <div id="inner">
 
 <div class="card"><img src="images/vampire.jpg" alt="vampire" style="width:100%">
-<div class="container"><h4><b>Vampire</b></h4> 
+<div class="container">
+<h4><font color="green">Vampire</font></h4>
 <p>Strength - +1
 Vitality - +1
 Magic - +1
@@ -188,16 +197,16 @@ Sense - +1
 
 <div class="card"><img src="images/robo.jpg" alt="Robo" style="width:100%">
 <div class="container">
-<h4><b>Automitia</b></h4> 
+  <h4><font color="green">Automitia</font></h4>
 <p>Strength - +2
 Vitality - +1
-Defence - +2 
+Defence - +2
 <br> (Do not have staminia)
 </p> </div></div>
 
 <div class="card"><img src="images/undead.jpg" alt="undead" style="width:100%">
 <div class="container">
-<h4><b>Undead (generic)</b></h4> 
+  <h4><font color="green">Undead (generic)</font></h4>
 <p>Strength - +1
 Vitality - +1
 Magic - +2
@@ -207,19 +216,19 @@ MDef - +1
 
 <div class="card"><img src="images/krogan.jpg" alt="Krogan" style="width:100%">
 <div class="container">
-<h4><b>Krogan</b></h4> 
+  <h4><font color="green">Krogan</font></h4>
 <p>Strength - +2
 Vitality - +2
-Defence - +1 
+Defence - +1
 <br>(Unable to sneak, do not suffer from fear status)
 </p></div></div>
 
 <div class="card"><img src="images/Turian.jpg" alt="Turian" style="width:100%">
 <div class="container">
-<h4><b>Turian</b></h4> 
+<h4><font color="green">Turian</font></h4>
 <p>Strength - +1
 Vitality - +1
-Defence - +1 
+Defence - +1
 Magic - +1
 Dexterity - +1
 <br>(Their scales reduce physical dammage taken)
@@ -245,7 +254,8 @@ Dexterity - +1
 <div id="inner">
 
 <div class="card"><img src="images/kitsune.jpg" alt="Kitsune" style="width:100%">
-<div class="container"><h4><b>Kitsune</b></h4> 
+<div class="container">
+  <h4><font color="red">Kitsune</font></h4>
 <p>
 Magic - +2
 MDef - +2
@@ -254,7 +264,7 @@ Charisma - +2
 
 <div class="card"><img src="images/Goblin.jpg" alt="Goblin" style="width:100%">
 <div class="container">
-<h4><b>Goblin</b></h4> 
+  <h4><font color="red">Goblin</font></h4>
 <p>Vitality - +1
 Dexterity - +2
 Sense - +1
@@ -263,7 +273,7 @@ Sense - +1
 
 <div class="card"><img src="images/thri-kreen.jpg" alt="Thri-kreen" style="width:100%">
 <div class="container">
-<h4><b>Thri-kreen</b></h4> 
+  <h4><font color="red">Thri-kreen</font></h4>
 <p>Strength - +1
 Dexterity - +3
 <br> (no dual wielding reduction)
@@ -271,7 +281,7 @@ Dexterity - +3
 
 <div class="card"><img src="images/kenku.jpg" alt="Kenku" style="width:100%">
 <div class="container">
-<h4><b>Kenku</b></h4> 
+  <h4><font color="red">Kenku</font></h4>
 <p>
 MDef - +2
 Dexterity - +2
@@ -280,10 +290,10 @@ Dexterity - +2
 
 <div class="card"><img src="images/troglodytes.png" alt="Troglodyte" style="width:100%">
 <div class="container">
-<h4><b>Troglodytes</b></h4> 
+  <h4><font color="red">Troglodytes</font></h4>
 <p>
 Vitality - +2
-Defence - +1 
+Defence - +1
 Magic - +1
 <br> (Can produce poison with their bodies)
 </p></div></div>
@@ -337,4 +347,3 @@ Magic - +1
 </body>
 
 </html>
-

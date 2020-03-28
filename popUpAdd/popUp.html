@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+body {
+  background-color: #edb3f2;
+}
+
+h1 {
+  color: #1f1f1f;
+  text-align: center;
+}
+
+p {
+  color: #2e2e2e;
+text-align: center;
+}
+</style>
+
+    <meta charset="utf-8">
+    <title>PopUpAd</title>
+
+  </head>
+  <body onLoad="popup('autopopup.html', 'ad')">
+    <div class="h1-title">
+      <h1>Pop up page</h1>
+    </div>
+    <div class="text">
+      <p>The pop up will appear seprate to this page unless blocked by one of your plugins.</p>
+    </div>
+  </body>
+</html>
+
+
+
+<script>
+var newPopup=window.open("","PopupWindow","height=300,width=250");
+var popContent='<HTML><HEAD><TITLE>PopUp</TITLE></HEAD><BODY MARGINWIDTH=0 MARGINHEIGHT=0 LEFTMARGIN=5px TOPMARGIN=0 BOTTOMMARGIN=0>';
+popContent+= '<a target="_blank" href="http://DomainURL"><img src="https://en.meming.world/images/en/thumb/2/2c/Surprised_Pikachu_HD.jpg/300px-Surprised_Pikachu_HD.jpg" height=250 width=250 border=0></a>';
+popContent+='<h1 style="color:red;text-align:center;">Pika-Pop-Up</h1></BODY></HTML>';
+newPopup.document.write(popContent);
+newPopup.focus();
+newPopup.document.close();
+</script>
