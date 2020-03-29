@@ -1,0 +1,23 @@
+
+#header {
+color: white;
+width: 100%;
+padding: 3px;
+border-top-left-radius: 0.25px;
+border-top-right-radius: 0.25px;
+text-align: center;
+font-size: 40px;
+}
+
+#header.alt .logo {
+  transition: opacity 1.25s ease, transform 0.5s ease;
+  transition-delay: 0s;
+  display: block;
+  margin: 0 0 1.5em 0;
+}
+
+  #header.alt .logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
