@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 
-<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold).
 
 Strength - +1  		Physical Damage
-Vitality - +2		HP 
+Vitality - +2		HP
 Defence - +0 		Physical Damage reduction
 Magic - +0			Magical Damage
 MDef - +0			Magical damage reduction
-Dexterity - +0		Attack Speed 
+Dexterity - +0		Attack Speed
 
 Sense - +0			Trap Detect
 Charisma - +0		Dialog Pass
@@ -15,7 +15,7 @@ Charisma - +0		Dialog Pass
 hp
 100 + (level * 10) + (vit *14.5) {basic, change on class?}
 2100 + 1320 = 3420
-with equip (-50%) = 1710 
+with equip (-50%) = 1710
 
 Mp
 (level * 5) + (mag * 8)
@@ -24,7 +24,7 @@ Mp
 
 
 Wep speeds are speeds given {this looks good}
-Damage = Power * (Str/Def) * Rand 
+Damage = Power * (Str/Def) * Rand
 rand =(RANDBETWEEN(240,271)/100)
 Magic formula the same
 
@@ -76,22 +76,29 @@ Magic formula the same
 <p>Current Race: <font color="blue">Human</font>.</p>
 <h4>List of equipped items:</h4>
 <ul>
-<li>Head:<font color="blue">Cloak of protection</font> +20 def, + 20 mdef.</li> <br>
-<li>Body:<font color="blue">Plate Mail</font> +40 def.</li><br>
-<li>Hands:<font color="blue">Spongey Gloves</font> +10 def. Protects from recoil damage.</li><br>
-<li>Legs:<font color="blue">Plate Pants</font> +40 def.</li><br>
-<li>Feet:<font color="blue">Plate Boots</font>+40 def.</li><br>
-<li>Acc1:<font color="blue">Ring of medium protection</font> +40 def.</li><br>
-<li>Acc2:<font color="blue">Ring of medium magic protection</font> +40 mdef.</li><br>
-<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +40 mdef.</li><br>
-<li>Acc4:<font color="blue">Ring of medium fortitude</font> +40 vit.</li><br>
-<li>Primary:<font color="blue">Large Mace</font> +50 str.</li><br>
-<li>Secoundary:<font color="blue">Tower shield</font> +40 def. +10 mdef.</li><br>
+<li>Head:<font color="blue">Cloak of protection</font> +10 def, + 10 mdef.</li> <br>
+<li>Body:<font color="blue">Plate Mail</font> +50 def.</li><br>
+<li>Hands:<font color="blue">Spongey Gloves</font> +25 def. Protects from recoil damage.</li><br>
+<li>Feet:<font color="blue">Plate Boots</font>+30 def.</li><br>
+<li>Acc1:<font color="blue">Ring of medium protection</font> +25 def, -5 dex.</li><br>
+<li>Acc2:<font color="blue">Ring of medium magic protection</font> +25 mdef, -5 vit.</li><br>
+<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +25 mdef, -5 str.</li><br>
+<li>Acc4:<font color="blue">Ring of medium fortitude</font> +25 vit. - 5 sense.</li><br>
+<li>Primary:<font color="blue">Large Mace</font> +70 str.</li><br>
+<li>Secoundary:<font color="blue">Tower shield</font> +30 def.</li><br>
 </ul>
+<!-- legendary (Orange), Unique (purple), growth-type (Seraph), Quest/inherent (gold).
+Armors Main - 50 -1x
+Armor Off - 30 -4x (drop it to 10? adds to 90)
+Accs - 20 -4x
+Weapons, +70 -1x - Sheild in main - +70
+off - 15 -1x
+shield - 30 -1x
+two - 80 -1x-->
 </div>
 
 <span class="image"><img src="images/w1.jpg" alt="" /></span>
-</div>		
+</div>
 </section>
 
 <!-- First Section -->
@@ -106,7 +113,7 @@ Magic formula the same
 <h4>The following is at level 100.</h4> <!--400 to spend-->
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+<div class="container"><h4 style="color:black;">Stats distribution</h4>
 <p>
 Strength - +100<br>
 Vitality - +100<br>
@@ -119,7 +126,7 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
+<div class="container"><h4 style="color:black;">Stats Equipped</h4>
 <p>
 Strength - +150<br>
 Vitality - +140<br>
@@ -132,7 +139,7 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+<div class="container"><h4 style="color:black;">Stats With Skills</h4>
 <p>
         Strength - +169<br>
         Vitality - +159<br>
@@ -145,7 +152,7 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+<div class="container"><h4 style="color:black;">Stats With Titles</h4>
 <p>
         Strength - +169<br>
         Vitality - +159<br>
@@ -199,7 +206,7 @@ Charisma - +2
 <li>Mdef up, Increases Mdef(+) (9)</li>
 <li>Crippling blow, Cripple the target with a sweeping blow</li>
 <li>Deflective barrier, Projectiles that hit you are reflected back at the caster. (still take damage)</li>
-<li>Challenge, Mark target enemy. If they die within x secounds, you are healed the amount of hp they lost.</li>           
+<li>Challenge, Mark target enemy. If they die within x secounds, you are healed the amount of hp they lost.</li>
 	</ul>
 </p>
 
@@ -252,13 +259,13 @@ Charisma - +2
 
 	<div class="card"><img src="images/w1.jpg" alt="Guardian" style="width:100%">
 		<div class="container">
-		<h4 style="color:green;">Guardian</h4> 
+		<h4 style="color:green;">Guardian</h4>
 		<p> +2 def, 5% resistance to normal weapons.
 		<br> A tank class that lives to protect.
 		</p></div></div>
 
 <div class="card"><img src="images/notsure.jpg" alt="Pmage" style="width:100%">
-<div class="container"><h4 style="color:green;">Bakeneko</h4> 
+<div class="container"><h4 style="color:green;">Bakeneko</h4>
 <p>Shared with partner: <br>
 +5 Charisma.
 <br><br>
@@ -266,7 +273,7 @@ It does not share it`s combat skills or stats, an Bakeneko has a wide range of s
 </p> </div></div>
 
 <div class="card"><img src="images/jane.png" alt="human" style="width:100%">
-    <div class="container"><h4 style="color:blue;">Human</h4> 
+    <div class="container"><h4 style="color:blue;">Human</h4>
     <p>
     Sense - +1
     Charisma - +2
@@ -274,9 +281,9 @@ It does not share it`s combat skills or stats, an Bakeneko has a wide range of s
     </p> </div></div>
 
 <div class="card"><img src="images/w5.jpg" alt="Pmage" style="width:100%">
-<div class="container"><h4 style="color:blue;">Plate Mail</h4> 
+<div class="container"><h4 style="color:blue;">Plate Mail</h4>
 <p>
-+40 Def. 
++40 Def.
 </p> </div></div>
 
 
@@ -318,4 +325,3 @@ It does not share it`s combat skills or stats, an Bakeneko has a wide range of s
 </body>
 
 </html>
-

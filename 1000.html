@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 
-<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold).
 
 Strength - +1  		Physical Damage
-Vitality - +2		HP 
+Vitality - +2		HP
 Defence - +0 		Physical Damage reduction
 Magic - +0			Magical Damage
 MDef - +0			Magical damage reduction
-Dexterity - +0		Attack Speed 
+Dexterity - +0		Attack Speed
 
 Sense - +0			Trap Detect
 Charisma - +0		Dialog Pass
@@ -15,7 +15,7 @@ Charisma - +0		Dialog Pass
 hp
 100 + (level * 10) + (vit *14.5) {basic, change on class?}
 2100 + 1320 = 3420
-with equip (-50%) = 1710 
+with equip (-50%) = 1710
 
 Mp
 (level * 5) + (mag * 8)
@@ -24,7 +24,7 @@ Mp
 
 
 Wep speeds are speeds given {this looks good}
-Damage = Power * (Str/Def) * Rand 
+Damage = Power * (Str/Def) * Rand
 rand =(RANDBETWEEN(240,271)/100)
 Magic formula the same
 
@@ -76,22 +76,29 @@ Magic formula the same
 <p>Current Race: <font color="green">Dark Elf</font>.</p>
 <h4>List of equipped items:</h4>
 <ul>
-<li>Head:<font color="blue">Cloak of defence</font> +40 def.</li> <br>
-<li>Body:<font color="blue">Plate Mail</font> +40 def.</li><br>
-<li>Hands:<font color="blue">Plate Gloves</font> +40 def.</li><br>
-<li>Legs:<font color="blue">Plate Pants</font> +40 def.</li><br>
-<li>Feet:<font color="blue">Plate Boots</font>+40 def.</li><br>
-<li>Acc1:<font color="blue">Ring of medium magic</font> +40 mag.</li><br>
-<li>Acc2:<font color="blue">Ring of medium magic protection</font> +40 mdef.</li><br>
-<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +40 mdef.</li><br>
-<li>Acc4:<font color="blue">Ring of medium strength</font> +40 str.</li><br>
-<li>Primary:<font color="green">Enchanted Blade</font> +30 Str, +20 Mag.</li><br>
-<li>Secoundary:<font color="green">Enchanted Blade (off hand)</font> +15 str, +10 mag.</li><br>
+<li>Head:<font color="blue">Cloak of defence</font> +30 def.</li> <br>
+<li>Body:<font color="blue">Plate Mail</font> +50 def.</li><br>
+<li>Hands:<font color="blue">Plate Gloves</font> +30 def.</li><br>
+<li>Feet:<font color="blue">Plate Boots</font>+30 def.</li><br>
+<li>Acc1:<font color="blue">Ring of medium magic</font> +25 mag, -5 chrisma.</li><br>
+<li>Acc2:<font color="blue">Ring of medium magic protection</font> +25 mdef, -5 vit.</li><br>
+<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +25 mdef, -5 str.</li><br>
+<li>Acc4:<font color="blue">Ring of medium strength</font> +25 str, -5 def.</li><br>
+<li>Primary:<font color="green">Enchanted Blade</font> +40 Str, +30 Mag.</li><br>
+<li>Secoundary:<font color="green">Enchanted Blade (off hand)</font> +10 str, +5 mag.</li><br>
 </ul>
+<!-- legendary (Orange), Unique (purple), growth-type (Seraph), Quest/inherent (gold).
+Armors Main - 50 -1x
+Armor Off - 30 -4x (drop it to 10? adds to 90)
+Accs - 20 -4x
+Weapons, +70 -1x - Sheild in main - +70
+off - 15 -1x
+shield - 30 -1x
+two - 80 -1x-->
 </div>
 
 <span class="image"><img src="images/1000.jpg" alt="" /></span>
-</div>		
+</div>
 </section>
 
 <!-- First Section -->
@@ -106,7 +113,7 @@ Magic formula the same
 <h4>The following is at level 1000.</h4> <!--1300 to spend-->
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+<div class="container"><h4 style="color:black;">Stats distribution</h4>
 <p>
 Strength - +300<br>
 Vitality - +0<br>
@@ -119,7 +126,7 @@ Charisma - -1
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
+<div class="container"><h4 style="color:black;">Stats Equipped</h4>
 <p>
         Strength - +385<br>
         Vitality - +0<br>
@@ -132,7 +139,7 @@ Charisma - -1
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+<div class="container"><h4 style="color:black;">Stats With Skills</h4>
 <p>
         Strength - +385<br>
         Vitality - +0<br>
@@ -145,7 +152,7 @@ Charisma - -1
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+<div class="container"><h4 style="color:black;">Stats With Titles</h4>
 <p>
         Strength - +385<br>
         Vitality - +0<br>
@@ -196,7 +203,7 @@ Charisma - -1
 <li>Aeolian Edge</li>
 <li>Shadow Fang A</li>
 <li>Fleet of Foot, move speed</li>
-<li>All fours, dammage while falling</li> 
+<li>All fours, dammage while falling</li>
 </ul>
 </p>
 
@@ -248,7 +255,7 @@ Charisma - -1
 </header>
 <p>HP = (level*10)+(Vit*14.5) = 10000 <br>
     MP = (level*5)+(Mag*8) = 6840 <br></p>
-    
+
 <p>This is not an ideal choice for 1v1 combat, as the str is low, the hp is really low.<br>
 Let's have it fight A slow two handed warrior, base stats are:<br>
 Warrior, Str 600, Vit 600, def 100, dex 0<br>
@@ -266,7 +273,7 @@ all this is showing is that 1v1, all things equal, the warrior will win.<br>
 <p>
     Even with the rouge type using the 50 power skill more often, and both using 80 power on the 8th.<br>
     The gap just gets larger as time goes on.<br>
-    eg, 50, 1 ,1, 50, 1 ,1 ,1, 80 = 481, the warrior doing 50, 80, = 1150. 
+    eg, 50, 1 ,1, 50, 1 ,1 ,1, 80 = 481, the warrior doing 50, 80, = 1150.
 </p>
 <!--Power = base power, e.g. 14 then each level add`s half base power.-->
 <h2>Hidden Bonuses</h2>
@@ -278,21 +285,21 @@ all this is showing is that 1v1, all things equal, the warrior will win.<br>
 
 	<div class="card"><img src="images/1000.jpg" alt="BladeSinger" style="width:100%">
 		<div class="container">
-		<h4 style="color:green;">BladeSinger</h4> 
+		<h4 style="color:green;">BladeSinger</h4>
 		<p> ????
 		<br> A rogue that uses enchanted blades.
 		</p></div></div>
 
         <div class="card"><img src="images/dove.jpg" alt="Pmage" style="width:100%">
-            <div class="container"><h4 style="color:blue;">Dove</h4> 
+            <div class="container"><h4 style="color:blue;">Dove</h4>
             <p>Shared with partner: <br>
-            Can bring and send messages. When not in combat hp recovery +10%. 
+            Can bring and send messages. When not in combat hp recovery +10%.
             <br><br>
             It does not share it`s combat skills or stats, but a Dove is poor in combat.
             </p> </div></div>
 
 <div class="card"><img src="images/jane.png" alt="human" style="width:100%">
-    <div class="container"><h4 style="color:green;">Dark Elf</h4> 
+    <div class="container"><h4 style="color:green;">Dark Elf</h4>
     <p>
     Dex +3
     Sense - +2
@@ -301,9 +308,9 @@ all this is showing is that 1v1, all things equal, the warrior will win.<br>
     </p> </div></div>
 
 <div class="card"><img src="images/w5.jpg" alt="Pmage" style="width:100%">
-<div class="container"><h4 style="color:blue;">Plate Mail</h4> 
+<div class="container"><h4 style="color:blue;">Plate Mail</h4>
 <p>
-+40 Def. 
++40 Def.
 </p> </div></div>
 
 
@@ -345,4 +352,3 @@ all this is showing is that 1v1, all things equal, the warrior will win.<br>
 </body>
 
 </html>
-

@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 
-<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold). 
+<!-- Classes, normal (blue), rare (green), epic (red), Unique (purple), legendary (Orange), growth-type (Seraph(pink)), Quest/inherent (gold).
 
 Strength - +1  		Physical Damage
-Vitality - +2		HP 
+Vitality - +2		HP
 Defence - +0 		Physical Damage reduction
 Magic - +0			Magical Damage
 MDef - +0			Magical damage reduction
-Dexterity - +0		Attack Speed 
+Dexterity - +0		Attack Speed
 
 Sense - +0			Trap Detect
 Charisma - +0		Dialog Pass
@@ -15,7 +15,7 @@ Charisma - +0		Dialog Pass
 hp
 100 + (level * 10) + (vit *14.5) {basic, change on class?}
 2100 + 1320 = 3420
-with equip (-50%) = 1710 
+with equip (-50%) = 1710
 
 Mp
 (level * 5) + (mag * 8)
@@ -24,7 +24,7 @@ Mp
 
 
 Wep speeds are speeds given {this looks good}
-Damage = Power * (Str/Def) * Rand 
+Damage = Power * (Str/Def) * Rand
 rand =(RANDBETWEEN(240,271)/100)
 Magic formula the same
 
@@ -76,22 +76,29 @@ Magic formula the same
 <p>Current Race: <font color="blue">Human</font>.</p>
 <h4>List of equipped items:</h4>
 <ul>
-<li>Head:<font color="blue">Cloak of Defence</font> +40 def.</li> <br>
-<li>Body:<font color="blue">Plate Mail</font> +40 def.</li><br>
-<li>Hands:<font color="blue">Plate Gloves</font> +40 def.</li><br>
-<li>Legs:<font color="blue">Plate Pants</font> +40 def.</li><br>
-<li>Feet:<font color="blue">Plate Boots</font>+40 def.</li><br>
-<li>Acc1:<font color="blue">Ring of medium protection</font> +40 def.</li><br>
-<li>Acc2:<font color="blue">Ring of medium magic protection</font> +40 mdef.</li><br>
-<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +40 mdef.</li><br>
-<li>Acc4:<font color="blue">Ring of medium fortitude</font> +40 vit.</li><br>
-<li>Primary:<font color="green">Blessed Sword</font> +20 str, +20 mag, +10 dex.</li><br>
-<li>Secoundary:<font color="blue">Compact Bow</font> +50 dex. (When in use).</li><br>
+<li>Head:<font color="blue">Cloak of Defence</font> +30 def.</li> <br>
+<li>Body:<font color="blue">Plate Mail</font> +50 def.</li><br>
+<li>Hands:<font color="blue">Plate Gloves</font> +30 def.</li><br>
+<li>Feet:<font color="blue">Plate Boots</font>+30 def.</li><br>
+<li>Acc1:<font color="blue">Ring of medium protection</font> +25 def, -5 dex.</li><br>
+<li>Acc2:<font color="blue">Ring of medium magic protection</font> +25 mdef, -5 vit.</li><br>
+<li>Acc3:<font color="blue">Pendent of medium magic protection </font> +25 mdef, -5 str.</li><br>
+<li>Acc4:<font color="blue">Ring of medium fortitude</font> +25 vit. - 5 sense.</li><br>
+<li>Primary:<font color="green">Blessed Sword</font> +30 str, +30 mag, +10 dex. (+5 str & mag when used two handed.)</li><br>
+<li>Secoundary:<font color="blue">Compact Bow</font> +80 dex, when in use. +15 dex when not.</li><br>
+<!-- legendary (Orange), Unique (purple), growth-type (Seraph), Quest/inherent (gold).
+Armors Main - 50 -1x
+Armor Off - 30 -4x (drop it to 10? adds to 90)
+Accs - 20 -4x
+Weapons, +70 -1x - Sheild in main - +70
+off - 15 -1x
+shield - 30 -1x
+two - 80 -1x-->
 </ul>
 </div>
 
 <span class="image"><img src="images/w6.jpg" alt="" /></span>
-</div>		
+</div>
 </section>
 
 <!-- First Section -->
@@ -106,7 +113,7 @@ Magic formula the same
 <h4>The following is at level 300.</h4> <!--600 to spend-->
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats distribution</h4> 
+<div class="container"><h4 style="color:black;">Stats distribution</h4>
 <p>
 Strength - +140<br>
 Vitality - +100<br>
@@ -119,8 +126,8 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats Equipped</h4> 
-<p> 
+<div class="container"><h4 style="color:black;">Stats Equipped</h4>
+<p>
 Strength - +160<br>
 Vitality - +140<br>
 Defence - +340<br>
@@ -132,7 +139,7 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Skills</h4> 
+<div class="container"><h4 style="color:black;">Stats With Skills</h4>
 <p>
 Strength - +179<br>
 Vitality - +159<br>
@@ -145,7 +152,7 @@ Charisma - +2
 </p> </div></div>
 
 <div class="card">
-<div class="container"><h4 style="color:black;">Stats With Titles</h4> 
+<div class="container"><h4 style="color:black;">Stats With Titles</h4>
 <p>
         Strength - +179<br>
         Vitality - +159<br>
@@ -246,13 +253,13 @@ Charisma - +2
 
 	<div class="card"><img src="images/pally2.jpg" alt="Pally2" style="width:100%">
 		<div class="container">
-		<h4 style="color:blue;">Paladin</h4> 
-		<p> A Warrior type advanced class that has access to faith.            
+		<h4 style="color:blue;">Paladin</h4>
+		<p> A Warrior type advanced class that has access to faith.
 		<br> Can use holy objects, cannot use unholy objects
 		</p></div></div>
 
 <div class="card"><img src="images/Sipahis.jpg" alt="Pmage" style="width:100%">
-<div class="container"><h4 style="color:blue;">Horse</h4> 
+<div class="container"><h4 style="color:blue;">Horse</h4>
 <p>Shared with partner: <br>
 +3% walking speed
 <br><br>
@@ -260,7 +267,7 @@ It does not share it`s combat skills or stats, a horse is good for riding.
 </p> </div></div>
 
 <div class="card"><img src="images/jane.png" alt="human" style="width:100%">
-    <div class="container"><h4 style="color:blue;">Human</h4> 
+    <div class="container"><h4 style="color:blue;">Human</h4>
     <p>
     Sense - +1
     Charisma - +2
@@ -268,9 +275,9 @@ It does not share it`s combat skills or stats, a horse is good for riding.
     </p> </div></div>
 
 <div class="card"><img src="images/w5.jpg" alt="Pmage" style="width:100%">
-<div class="container"><h4 style="color:blue;">Plate Mail</h4> 
+<div class="container"><h4 style="color:blue;">Plate Mail</h4>
 <p>
-+40 Def. 
++40 Def.
 </p> </div></div>
 
 
@@ -312,4 +319,3 @@ It does not share it`s combat skills or stats, a horse is good for riding.
 </body>
 
 </html>
-
