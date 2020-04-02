@@ -174,59 +174,18 @@ Photoshop, Multi-Sim, Matlab, Visual Basic, Microsoft office
 </article>
 </section>
 
-<!-- Footer -->
-<!--
+</div>
+
+<!-- Footer
 <footer id="footer">
 <section>
-<form method="post" action="#">
-<div class="fields">
-<div class="field">
-<label for="name">Name</label>
-<input type="text" name="name" id="name" />
-</div>
-<div class="field">
-<label for="email">Email</label>
-<input type="text" name="email" id="email" />
-</div>
-<div class="field">
-<label for="message">Message</label>
-<textarea name="message" id="message" rows="3"></textarea>
-</div>
-</div>
-<ul class="actions">
-<li><input type="submit" value="Send Message" /></li>
-</ul>
-</form>
-</section>
-<section class="split contact">
-<section class="alt">
-<h3>Address</h3>
-<p>Address<br>
-More address</p>
-</section>
-<section>
-<h3>Phone</h3>
-<p><a href="#">000-0000</a></p>
-</section>
-<section>
-<h3>Email</h3>
-<p><a href="#">Notanemail@email.com</a></p>
-</section>
-<section>
-<h3>Social</h3>
-<ul class="icons alt">
-<li><a href="https://github.com/ottotsuma" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-</ul>
-</section>
 </section>
 </footer>
 -->
 
 <!-- Below -->
 <div id="below">
-<ul><li>ダラー</li><li>ショーン</li><li><a href="home.html">Game</a></li></ul>
-</div>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div>
 
 <!-- Scripts -->
@@ -237,6 +196,15 @@ More address</p>
 <script src="breakpoints.min.js"></script>
 <script src="util.js"></script>
 <script src="main-home.js"></script>
+<script type="text/javascript">
+//Get the button:
+mybutton = document.getElementById("myBtn");
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 </body>
 </html>
