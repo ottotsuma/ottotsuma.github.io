@@ -3817,11 +3817,16 @@ input, select, textarea {
 			}
 
 		}
+/* End */
+#end {
+	padding: 2rem 2rem 1rem 2rem;
+  margin: 0;
+	border-top: none;
+}
 
 /* Footer */
 
 	#footer {
-		color: #717981;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
