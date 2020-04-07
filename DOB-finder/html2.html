@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <!--service worker start-->
-        <script>
-          if ('serviceWorker' in navigator)
-          {
-          window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/service-worker.js')
-            .then(function() { console.log("Service Worker Registered"); });
-          }
-          );
-        }
-        </script>
- <!--service worker end-->
+   <!-- register service worker -->
+   <script>
 
- <!--web manifest start-->
-<link rel="manifest" href="/manifest.json">
-<!--web manifest end-->
+    if ('serviceWorker' in navigator)
+    {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/DOB-finder/service-worker.js')
+      .then(function() { console.log("Service Worker Registered"); });
+    }
+    );
+  }
+  </script>
+<!-- end of service worker -->
+
+ <!-- start of web manifest -->
+ <link rel="manifest" href="/DOB-finder/manifest.json">
+ <!-- end of web manifest -->
+
+   <!-- theme-color -->
+   <meta name="theme-color" content="#fff" />
+   <!-- end-theme-color -->
 
     <title>Day of Birth Finder</title>
     <meta charset="UTF-8" />
