@@ -1,3 +1,12 @@
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
+  '/',
+  '/css/app.css',
+  '/js/app.js',
+  '/js/date.js',
+  '/js/date script.js'
+];
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
