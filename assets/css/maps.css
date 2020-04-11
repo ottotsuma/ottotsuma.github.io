@@ -2652,6 +2652,16 @@ input, select, textarea {
 
 		}
 
+		.image.fit {
+			width: auto;
+			height: auto;
+			border-radius: 7px;
+
+		}
+		.image.fit:hover {
+  transform: scaleX(-1);
+}
+
 	a.image {
 		overflow: hidden;
 	}
@@ -2669,6 +2679,8 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
+
+
 
 /* Actions */
 
