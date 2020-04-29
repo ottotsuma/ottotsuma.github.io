@@ -1,13 +1,12 @@
 .container{
-    position: absolute;
-    margin-left: 50px; /* Half of width */
+  display: flex;
 }
 
 .player {
     margin: 0 auto;
     width: 500px;
     border: solid 1px lightgray;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     box-shadow: 0 10px 5px 0 lightgray;
     float: left;
@@ -17,7 +16,7 @@
     margin: 0 auto;
     width: 500px;
     border: solid 1px lightgray;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     box-shadow: 0 10px 5px 0 lightgray;
     float: right;
@@ -36,13 +35,21 @@ input[type="text"], input[type="number"], label {
     font-family: 'Impact';
   }
 
+  .button-div {
+  height: 50px;
+  position: relative;
+  padding: 20px;
+  }
 
   .btn {
-      margin-top: 1100px;
-      margin-right: 0px;
       font-family: 'Impact';
       font-size: 20px;
-      
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 50%;
   }
   #form {
     margin-top: 20px;
