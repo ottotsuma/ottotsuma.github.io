@@ -236,7 +236,7 @@ document.getElementById("calculate").onclick = function(){
 
 // dex
 // Increases ranged Physical Attack: 1 point = 2.62 P.Att (nah)
-// Increase Critcal Rate: 1 points = 0.05~ Crit Rate (or 0.1~ for DG and RM) (higher for rouges?)
+// Increase Critical Rate: 1 points = 0.05~ Crit Rate (or 0.1~ for DG and RM) (higher for rouges?)
 // Diminishing return on Crit Rate.
 // Reduces Cooldown Time: 1 point = 0.04% CD reduction (dex?)
 // Reduces cast time?
@@ -264,7 +264,7 @@ document.getElementById("calculate").onclick = function(){
 
 // First 
 //     Dam = Math.round(((Power)*(Strength/defence)*randomNumber));
-//  Secound 
+//  Second 
 //     randomNumber = (Math.floor((Math.random()*171)+140)/100);
 //     ErandomNumber = (Math.floor((Math.random()*171)+140)/100);
 //     Redux = EDefense/10;
