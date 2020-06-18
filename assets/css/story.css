@@ -313,6 +313,12 @@
       color: black;
       text-align: center;
       padding: 5px; }
+
+      h4 {
+        color: black;
+      text-align: center;
+      padding: 5px; 
+      }
   
   p {
     color: black;
