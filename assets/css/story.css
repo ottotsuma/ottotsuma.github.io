@@ -114,6 +114,14 @@
     background-color: transparent;
     overflow: hidden;
     width: 100%; }
+    
+    #inner1 {
+      overflow: hidden;
+      width: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
   
   #inner {
     overflow: hidden;
@@ -319,14 +327,22 @@
       text-align: center;
       padding: 5px; 
       }
-  
+
   p {
     color: black;
     font-size: 20px;
     text-align: center;
     padding: 10px;
     padding-left: 50px;
-    padding-right: 50px; }
+    padding-right: 50px; 
+  }
+  li {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    list-style: none;
+  }
   
   /* Main */
   #main {

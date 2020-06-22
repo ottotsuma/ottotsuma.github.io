@@ -2582,6 +2582,16 @@ input, select, textarea {
 
 /* Image */
 
+#tsumaBonus {
+	margin: 40px;
+}
+#tsuma {
+    display: flex;
+    float: right;
+	height: 200px;
+	margin: 1px;
+  }
+
 	.image {
 		border: 0;
 		display: inline-block;
