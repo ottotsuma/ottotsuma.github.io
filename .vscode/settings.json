@@ -31,5 +31,7 @@
         "steinauhau",
         "sweausern",
         "tlapatan"
-    ]
+    ],
+    "eslint.enable": false,
+    "cSpell.enabled": true
 }
