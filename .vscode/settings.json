@@ -32,6 +32,6 @@
         "sweausern",
         "tlapatan"
     ],
-    "eslint.enable": false,
+    "eslint.enable": true,
     "cSpell.enabled": true
 }
