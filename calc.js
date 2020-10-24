@@ -263,7 +263,7 @@ document.getElementById("calculate").onclick = function(){
 
 
 // First 
-//     Dam = Math.round(((Power)*(Strength/defence)*randomNumber));
+//     Dam = Math.round(((Power)*(Strength/defense)*randomNumber));
 //  Second 
 //     randomNumber = (Math.floor((Math.random()*171)+140)/100);
 //     ErandomNumber = (Math.floor((Math.random()*171)+140)/100);
