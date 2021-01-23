@@ -429,3 +429,7 @@
     position: absolute;
     right: 50%;
   }
+
+  .Fancy {
+    font-family: 'Seaweed Script', cursive;
+  }
