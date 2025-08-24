@@ -1,71 +1,71 @@
 var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
-
+    Strength = document.getElementById("Strength").value,
+    Power = document.getElementById("Power").value,
+    Defense = document.getElementById("Defense").value,
+    Magic = document.getElementById("Magic").value,
+    Mdef = document.getElementById("Mdef").value,
+    Vit = document.getElementById("Vit").value,
+    Dex = document.getElementById("Dex").value,
+    ELevel = document.getElementById("ELevel").value,
+    EStrength = document.getElementById("EStrength").value,
+    EPower = document.getElementById("EPower").value,
+    EDefense = document.getElementById("EDefense").value,
+    EMagic = document.getElementById("EMagic").value,
+    EMdef = document.getElementById("EMdef").value,
+    EVit = document.getElementById("EVit").value,
+    EDex = document.getElementById("EDex").value,
+    randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+// test
 // below here does not work
 function damageCalc() {
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*171)+140)/100);
-ErandomNumber = (Math.floor((Math.random()*171)+140)/100);
-    Redux = EDefense/10;
-    dam = Math.round(((Power/10)*(Strength)*randomNumber));
-    ans = dam-((dam/100)*Redux);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 171) + 140) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 171) + 140) / 100);
+    Redux = EDefense / 10;
+    dam = Math.round(((Power / 10) * (Strength) * randomNumber));
+    ans = dam - ((dam / 100) * Redux);
     return ans;
 };
 
 function EdamageCalc() {
 
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
-Redux = Defense/10;
-    dam = Math.round((EPower/10)*(EStrength)*ErandomNumber);
-    ans = dam-((dam/100)*Redux);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    Redux = Defense / 10;
+    dam = Math.round((EPower / 10) * (EStrength) * ErandomNumber);
+    ans = dam - ((dam / 100) * Redux);
     return ans;
 };
 
@@ -73,27 +73,27 @@ Redux = Defense/10;
 function damageCalcMagic() {
 
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
 
-Redux = EMdef/10;
-    dam = Math.round((Power/10)*(Magic)*randomNumber);
-    ans = dam-((dam/100)*Redux);
+    Redux = EMdef / 10;
+    dam = Math.round((Power / 10) * (Magic) * randomNumber);
+    ans = dam - ((dam / 100) * Redux);
     return ans;
 };
 
@@ -101,116 +101,116 @@ Redux = EMdef/10;
 function EdamageCalcMagic() {
 
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
 
-Redux = Mdef/10;
-    dam = Math.round((EPower/10)*(EMagic)*ErandomNumber);
-    ans = dam-((dam/100)*Redux);
+    Redux = Mdef / 10;
+    dam = Math.round((EPower / 10) * (EMagic) * ErandomNumber);
+    ans = dam - ((dam / 100) * Redux);
     return ans;
 };
 
 function Damage() {
     var answer = Math.floor(damageCalc());
-    document.getElementById("answer").innerHTML =answer;
+    document.getElementById("answer").innerHTML = answer;
 };
 
 function EDamage() {
     var Eanswer = Math.floor(EdamageCalc());
-    document.getElementById("Eanswer").innerHTML =Eanswer;
+    document.getElementById("Eanswer").innerHTML = Eanswer;
 };
 
 function DamageMagic() {
     var rrr = Math.floor(damageCalcMagic());
-    document.getElementById("MDam").innerHTML =rrr;
+    document.getElementById("MDam").innerHTML = rrr;
 };
 
 function EDamageMagic() {
     var rrr = Math.floor(EdamageCalcMagic());
-    document.getElementById("EMDam").innerHTML =rrr;
+    document.getElementById("EMDam").innerHTML = rrr;
 };
 
 function HP() {
 
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
 
-    var HP = Math.floor((Level*10)+(Vit*14.5)+100);
-    document.getElementById("Health").innerHTML =HP;
+    var HP = Math.floor((Level * 10) + (Vit * 14.5) + 100);
+    document.getElementById("Health").innerHTML = HP;
 };
 
 function EHP() {
 
     var Level = document.getElementById("Level").value,
-Strength = document.getElementById("Strength").value,
-Power = document.getElementById("Power").value,
-Defense = document.getElementById("Defense").value,
-Magic = document.getElementById("Magic").value,
-Mdef = document.getElementById("Mdef").value,
-Vit = document.getElementById("Vit").value,
-Dex = document.getElementById("Dex").value,
-ELevel = document.getElementById("ELevel").value,
-EStrength = document.getElementById("EStrength").value,
-EPower = document.getElementById("EPower").value,
-EDefense = document.getElementById("EDefense").value,
-EMagic = document.getElementById("EMagic").value,
-EMdef = document.getElementById("EMdef").value,
-EVit = document.getElementById("EVit").value,
-EDex = document.getElementById("EDex").value,
-randomNumber = (Math.floor((Math.random()*271)+240)/100);
-ErandomNumber = (Math.floor((Math.random()*271)+240)/100);
+        Strength = document.getElementById("Strength").value,
+        Power = document.getElementById("Power").value,
+        Defense = document.getElementById("Defense").value,
+        Magic = document.getElementById("Magic").value,
+        Mdef = document.getElementById("Mdef").value,
+        Vit = document.getElementById("Vit").value,
+        Dex = document.getElementById("Dex").value,
+        ELevel = document.getElementById("ELevel").value,
+        EStrength = document.getElementById("EStrength").value,
+        EPower = document.getElementById("EPower").value,
+        EDefense = document.getElementById("EDefense").value,
+        EMagic = document.getElementById("EMagic").value,
+        EMdef = document.getElementById("EMdef").value,
+        EVit = document.getElementById("EVit").value,
+        EDex = document.getElementById("EDex").value,
+        randomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
+    ErandomNumber = (Math.floor((Math.random() * 271) + 240) / 100);
 
 
-    var EHP = Math.floor((ELevel*10)+(EVit*14.5)+100);
-    document.getElementById("EHealth").innerHTML =EHP;
+    var EHP = Math.floor((ELevel * 10) + (EVit * 14.5) + 100);
+    document.getElementById("EHealth").innerHTML = EHP;
 };
 
 function Crit() {
     var Dex = document.getElementById("Dex").value
     var criticalHit = Math.floor((Math.random() * 15) + 1);
-    var crit = Math.floor(criticalHit+(Dex/10));
-    document.getElementById("logCrit").innerHTML =crit + '%';
+    var crit = Math.floor(criticalHit + (Dex / 10));
+    document.getElementById("logCrit").innerHTML = crit + '%';
 };
 
 function ECrit() {
     var EDex = document.getElementById("EDex").value
     var EcriticalHit = Math.floor((Math.random() * 15) + 1);
-    var Ecrit = Math.floor(EcriticalHit+(EDex/10));
-    document.getElementById("ElogCrit").innerHTML =Ecrit + '%';
+    var Ecrit = Math.floor(EcriticalHit + (EDex / 10));
+    document.getElementById("ElogCrit").innerHTML = Ecrit + '%';
 };
 
-document.getElementById("calculate").onclick = function(){
+document.getElementById("calculate").onclick = function () {
     HP();
     Damage();
     Crit();
@@ -262,14 +262,14 @@ document.getElementById("calculate").onclick = function(){
 // Increases Skill Attack Max: 1 point = 5.24 SAM
 
 
-// First 
+// First
 //     Dam = Math.round(((Power)*(Strength/defense)*randomNumber));
-//  Second 
+//  Second
 //     randomNumber = (Math.floor((Math.random()*171)+140)/100);
 //     ErandomNumber = (Math.floor((Math.random()*171)+140)/100);
 //     Redux = EDefense/10;
 //     dam = Math.round(((Power/10)*(Strength)*randomNumber));
 //     ans = dam-((dam/100)*Redux);
 //     return ans;
-// Third 
+// Third
 //     (Power*randomNumber*Strength)/Defense
